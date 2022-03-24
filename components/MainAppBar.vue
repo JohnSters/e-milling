@@ -20,27 +20,43 @@
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title v-text="item.title" />
+            <v-list-item-title v-text="item.title"/>
           </v-list-item-content>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-  <!--  App Bar Start  -->
+    <!--  App Bar Start  -->
     <v-app-bar class="elevation-4" :clipped-left="clipped" shaped fixed app elevate-on-scroll>
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer"/>
       <v-tooltip bottom color="blue">
-        <template v-slot:activator="{ on, attrs }">
-          <v-btn color="blue" class="ml-5" v-bind="attrs" v-on="on" nuxt to="/" fab dark depressed small>
+        <template #activator="{ on, attrs }">
+          <v-btn
+            color="blue"
+            class="ml-5"
+            v-bind="attrs"
+            nuxt
+            to="/"
+            fab dark depressed small
+            v-on="on"
+          >
             <v-icon>mdi-home</v-icon>
           </v-btn>
         </template>
         <span>Home Page</span>
       </v-tooltip>
-      <v-tooltip bottom color="#2E7D32">
-        <template v-slot:activator="{ on, attrs }">
-        <v-btn color="#2E7D32" class="ml-2" v-bind="attrs" v-on="on" fab dark depressed small>
-          <v-icon>mdi-phone</v-icon>
-        </v-btn>
+      <v-tooltip v-model="menuValue" bottom color="#2E7D32">
+        <template #activator="{ on, attrs }">
+          <v-btn
+            color="#2E7D32"
+            class="ml-2"
+            v-bind="attrs"
+            fab dark depressed small
+            nuxt
+            to="/contact"
+            v-on="on" :class="{active: menuValue}"
+          >
+            <v-icon>mdi-phone</v-icon>
+          </v-btn>
         </template>
         <span>Get In Touch</span>
       </v-tooltip>
@@ -55,12 +71,12 @@
       <v-btn icon>
         <v-icon color="purple" x-large>mdi-instagram</v-icon>
       </v-btn>
-      <v-spacer />
+      <v-spacer/>
       <v-btn class="mr-1 font-weight-bold hidden-md-and-down" color="#F57F17" depressed rounded small outlined>
         Products
         <v-icon>mdi-script-text-outline</v-icon>
       </v-btn>
-      <DropDownMenu />
+      <DropDownMenu/>
       <v-btn color="#2E7D32" class="mr-1 hidden-md-and-down" dark depressed rounded small nuxt to="/">
         Documents
         <v-icon class="ml-1">mdi-folder-open-outline</v-icon>
@@ -81,6 +97,7 @@ export default {
       clipped: false,
       drawer: false,
       fixed: false,
+      menuValue: null,
       items: [
         {
           icon: 'mdi-apps',
@@ -102,5 +119,23 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.v-btn.active .v-icon {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 </style>

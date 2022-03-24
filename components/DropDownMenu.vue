@@ -1,5 +1,5 @@
 <template>
-  <v-menu content-class="rounded-xl mt-2 elevation-1" offset-y open-on-hover close-delay="800">
+  <v-menu v-model="menuValue" content-class="rounded-xl mt-2 elevation-1" offset-y open-on-hover close-delay="800">
     <template v-slot:activator="{ on, attrs }">
       <v-btn
         color="#2E7D32"
@@ -9,10 +9,10 @@
         rounded
         small
         v-bind="attrs"
-        v-on="on"
+        v-on="on" :class="{active: menuValue}"
       >
         Company Info
-        <v-icon>mdi-arrow-down</v-icon>
+        <v-icon>mdi-arrow-up</v-icon>
       </v-btn>
     </template>
     <v-list color="#2E7D32" dark>
@@ -28,11 +28,11 @@
         <v-icon class="mr-2">mdi-account-multiple-outline</v-icon>
         <v-list-item-title>Meet Our Team</v-list-item-title>
       </v-list-item>
-      <v-list-item nuxt>
+      <v-list-item nuxt to="/info/care">
         <v-icon class="mr-2">mdi-heart</v-icon>
         <v-list-item-title>We Care</v-list-item-title>
       </v-list-item>
-      <v-list-item nuxt>
+      <v-list-item nuxt to="/info/green">
         <v-icon class="mr-2">mdi-forest</v-icon>
         <v-list-item-title>Green Power</v-list-item-title>
       </v-list-item>
@@ -54,10 +54,17 @@
 
 <script>
 export default {
-  name: "DropDownMenu"
+  name: "DropDownMenu",
+  data() {
+    return {
+      menuValue: null
+    };
+  }
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+.v-btn.active .v-icon {
+  transform: rotate(180deg);
+}
 </style>

@@ -1,11 +1,15 @@
 <template>
   <v-container>
-    <div>This is the index page</div>
+    Get in touch
   </v-container>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage',
+  name: "contact-us"
 }
 </script>
+
+<style scoped>
+
+</style>
