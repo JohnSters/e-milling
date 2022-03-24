@@ -26,30 +26,37 @@
       </v-list>
     </v-navigation-drawer>
   <!--  App Bar Start  -->
-    <v-app-bar :clipped-left="clipped" fixed app elevate-on-scroll>
+    <v-app-bar class="elevation-4" :clipped-left="clipped" shaped fixed app elevate-on-scroll>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title v-text="title" />
+      <v-spacer></v-spacer>
+      <v-chip label color="#2E7D32" class="mr-2 font-weight-bold" dark>Contact Us: 056-515-1309</v-chip>
+      <v-btn icon href="https://www.facebook.com" target="_blank">
+        <v-icon color="blue" x-large>mdi-facebook</v-icon>
+      </v-btn>
+      <v-btn icon>
+        <v-icon color="green" x-large>mdi-whatsapp</v-icon>
+      </v-btn>
+      <v-btn icon>
+        <v-icon color="purple" x-large>mdi-instagram</v-icon>
+      </v-btn>
       <v-spacer />
-      <v-btn class="mr-1 font-weight-bold" color="#FBC02D" depressed rounded small outlined>
+      <v-btn class="mr-1 font-weight-bold hidden-md-and-down" color="#F57F17" depressed rounded small outlined>
         Products
         <v-icon>mdi-script-text-outline</v-icon>
       </v-btn>
-      <v-btn color="#2E7D32" class="mr-1 lighten-3" dark depressed rounded small to="/">
+      <DropDownMenu />
+      <v-btn color="#2E7D32" class="mr-1 hidden-md-and-down" dark depressed rounded small nuxt to="/">
         Documents
         <v-icon class="ml-1">mdi-folder-open-outline</v-icon>
       </v-btn>
-      <v-btn color="#2E7D32" class="mr-1 lighten-3" dark depressed rounded small to="/">
+      <v-btn color="#2E7D32" class="mr-1 hidden-md-and-down" dark depressed rounded small nuxt to="/LatestNews">
         Latest News
         <v-icon class="ml-1">mdi-book-open-outline</v-icon>
       </v-btn>
-      <v-btn color="#2E7D32" class="lighten-3" dark depressed rounded small to="/">
-        About Us
-        <v-icon class="ml-1">mdi-nature-people</v-icon>
+      <v-btn color="#2E7D32" class="ml-5" fab dark depressed small>
+        <v-icon>mdi-face-agent</v-icon>
       </v-btn>
-      <v-btn color="green" class="ml-5" fab dark depressed small>
-        <v-icon>mdi-whatsapp</v-icon>
-      </v-btn>
-      <v-btn color="green" class="ml-1" fab dark depressed small>
+      <v-btn color="#2E7D32" class="ml-1" fab dark depressed small to="/">
         <v-icon>mdi-home</v-icon>
       </v-btn>
     </v-app-bar>

@@ -1,9 +1,7 @@
 <template>
-  <div>
-    <v-card height="1200">
-      Hello World
-    </v-card>
-  </div>
+  <v-container>
+    <div></div>
+  </v-container>
 </template>
 
 <script>
