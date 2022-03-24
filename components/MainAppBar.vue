@@ -44,22 +44,7 @@
         </template>
         <span>Home Page</span>
       </v-tooltip>
-      <v-tooltip v-model="menuValue" bottom color="#2E7D32">
-        <template #activator="{ on, attrs }">
-          <v-btn
-            color="#2E7D32"
-            class="ml-2"
-            v-bind="attrs"
-            fab dark depressed small
-            nuxt
-            to="/contact"
-            v-on="on" :class="{active: menuValue}"
-          >
-            <v-icon>mdi-phone</v-icon>
-          </v-btn>
-        </template>
-        <span>Get In Touch</span>
-      </v-tooltip>
+      <ContactInfo />
       <v-spacer></v-spacer>
       <v-chip label color="#2E7D32" class="mr-2 font-weight-bold" dark>Contact Us: 056-515-1309</v-chip>
       <v-btn icon href="https://www.facebook.com" target="_blank">
@@ -77,11 +62,11 @@
         <v-icon>mdi-script-text-outline</v-icon>
       </v-btn>
       <DropDownMenu/>
-      <v-btn color="#2E7D32" class="mr-1 hidden-md-and-down" dark depressed rounded small nuxt to="/">
+      <v-btn color="#2E7D32" class="mr-1 hidden-md-and-down" dark depressed rounded small nuxt>
         Documents
         <v-icon class="ml-1">mdi-folder-open-outline</v-icon>
       </v-btn>
-      <v-btn color="#2E7D32" class="mr-1 hidden-md-and-down" dark depressed rounded small nuxt to="/LatestNews">
+      <v-btn color="#2E7D32" class="mr-1 hidden-md-and-down" dark depressed rounded small nuxt to="/info/news">
         Latest News
         <v-icon class="ml-1">mdi-book-open-outline</v-icon>
       </v-btn>
@@ -97,7 +82,7 @@ export default {
       clipped: false,
       drawer: false,
       fixed: false,
-      menuValue: null,
+      menuValue: false,
       items: [
         {
           icon: 'mdi-apps',

@@ -1,5 +1,11 @@
 <template>
-  <v-menu v-model="menuValue" content-class="rounded-xl mt-2 elevation-1" offset-y open-on-hover close-delay="800">
+  <v-menu
+    v-model="menuValue"
+    content-class="rounded-xl mt-2 elevation-1"
+    offset-y
+    open-on-hover
+    close-delay="800"
+  >
     <template v-slot:activator="{ on, attrs }">
       <v-btn
         color="#2E7D32"
@@ -9,7 +15,8 @@
         rounded
         small
         v-bind="attrs"
-        v-on="on" :class="{active: menuValue}"
+        :class="{active: menuValue}"
+        v-on="on"
       >
         Company Info
         <v-icon>mdi-arrow-up</v-icon>
@@ -36,7 +43,7 @@
         <v-icon class="mr-2">mdi-forest</v-icon>
         <v-list-item-title>Green Power</v-list-item-title>
       </v-list-item>
-      <v-list-item nuxt>
+      <v-list-item nuxt to="/info/packing">
         <v-icon class="mr-2">mdi-package-variant-closed</v-icon>
         <v-list-item-title>Packing Excellence</v-list-item-title>
       </v-list-item>
@@ -44,7 +51,7 @@
         <v-icon class="mr-2">mdi-account-hard-hat</v-icon>
         <v-list-item-title>Vacancies / Jobs</v-list-item-title>
       </v-list-item>
-      <v-list-item nuxt>
+      <v-list-item nuxt to="/info/terms">
         <v-icon class="mr-2">mdi-shield-search</v-icon>
         <v-list-item-title>Terms & Conditions</v-list-item-title>
       </v-list-item>
