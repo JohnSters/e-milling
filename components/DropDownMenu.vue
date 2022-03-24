@@ -11,20 +11,20 @@
         v-bind="attrs"
         v-on="on"
       >
-        About Us
+        Company Info
         <v-icon>mdi-arrow-down</v-icon>
       </v-btn>
     </template>
     <v-list color="#2E7D32" dark>
-      <v-list-item nuxt to="/about-us">
+      <v-list-item nuxt to="/info/about">
         <v-icon class="mr-2">mdi-account-details</v-icon>
         <v-list-item-title>About Us</v-list-item-title>
       </v-list-item>
-      <v-list-item nuxt>
+      <v-list-item nuxt to="/info/profile">
         <v-icon class="mr-2">mdi-text-box</v-icon>
         <v-list-item-title>Company Profile</v-list-item-title>
       </v-list-item>
-      <v-list-item nuxt>
+      <v-list-item nuxt to="/info/team">
         <v-icon class="mr-2">mdi-account-multiple-outline</v-icon>
         <v-list-item-title>Meet Our Team</v-list-item-title>
       </v-list-item>
@@ -39,6 +39,10 @@
       <v-list-item nuxt>
         <v-icon class="mr-2">mdi-package-variant-closed</v-icon>
         <v-list-item-title>Packing Excellence</v-list-item-title>
+      </v-list-item>
+      <v-list-item nuxt>
+        <v-icon class="mr-2">mdi-account-hard-hat</v-icon>
+        <v-list-item-title>Vacancies / Jobs</v-list-item-title>
       </v-list-item>
       <v-list-item nuxt>
         <v-icon class="mr-2">mdi-shield-search</v-icon>

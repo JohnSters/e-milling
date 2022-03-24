@@ -28,6 +28,22 @@
   <!--  App Bar Start  -->
     <v-app-bar class="elevation-4" :clipped-left="clipped" shaped fixed app elevate-on-scroll>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+      <v-tooltip bottom color="blue">
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn color="blue" class="ml-5" v-bind="attrs" v-on="on" nuxt to="/" fab dark depressed small>
+            <v-icon>mdi-home</v-icon>
+          </v-btn>
+        </template>
+        <span>Home Page</span>
+      </v-tooltip>
+      <v-tooltip bottom color="#2E7D32">
+        <template v-slot:activator="{ on, attrs }">
+        <v-btn color="#2E7D32" class="ml-2" v-bind="attrs" v-on="on" fab dark depressed small>
+          <v-icon>mdi-phone</v-icon>
+        </v-btn>
+        </template>
+        <span>Get In Touch</span>
+      </v-tooltip>
       <v-spacer></v-spacer>
       <v-chip label color="#2E7D32" class="mr-2 font-weight-bold" dark>Contact Us: 056-515-1309</v-chip>
       <v-btn icon href="https://www.facebook.com" target="_blank">
@@ -52,12 +68,6 @@
       <v-btn color="#2E7D32" class="mr-1 hidden-md-and-down" dark depressed rounded small nuxt to="/LatestNews">
         Latest News
         <v-icon class="ml-1">mdi-book-open-outline</v-icon>
-      </v-btn>
-      <v-btn color="#2E7D32" class="ml-5" fab dark depressed small>
-        <v-icon>mdi-face-agent</v-icon>
-      </v-btn>
-      <v-btn color="#2E7D32" class="ml-1" fab dark depressed small to="/">
-        <v-icon>mdi-home</v-icon>
       </v-btn>
     </v-app-bar>
   </div>
@@ -93,5 +103,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>
