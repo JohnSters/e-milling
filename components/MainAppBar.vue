@@ -26,17 +26,17 @@
       </v-list>
     </v-navigation-drawer>
     <!--  App Bar Start  -->
-    <v-app-bar class="elevation-4" :clipped-left="clipped" shaped fixed app elevate-on-scroll>
+    <v-app-bar height="75vh" class="elevation-4" :clipped-left="clipped" shaped fixed app elevate-on-scroll>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"/>
       <v-tooltip bottom color="blue">
         <template #activator="{ on, attrs }">
           <v-btn
             color="blue"
-            class="ml-5"
+            class="ml-5 elevation-2"
             v-bind="attrs"
             nuxt
             to="/"
-            fab dark depressed small
+            dark
             v-on="on"
           >
             <v-icon>mdi-home</v-icon>
@@ -46,27 +46,18 @@
       </v-tooltip>
       <ContactInfo />
       <v-spacer></v-spacer>
-      <v-chip label color="#2E7D32" class="mr-2 font-weight-bold" dark>Contact Us: 056-515-1309</v-chip>
-      <v-btn icon href="https://www.facebook.com" target="_blank">
-        <v-icon color="blue" x-large>mdi-facebook</v-icon>
-      </v-btn>
-      <v-btn icon>
-        <v-icon color="green" x-large>mdi-whatsapp</v-icon>
-      </v-btn>
-      <v-btn icon>
-        <v-icon color="purple" x-large>mdi-instagram</v-icon>
-      </v-btn>
-      <v-spacer/>
-      <v-btn class="mr-1 font-weight-bold hidden-md-and-down" color="#F57F17" depressed rounded small outlined>
-        Products
-        <v-icon>mdi-script-text-outline</v-icon>
-      </v-btn>
+      <v-hover v-slot="{ hover }" close-delay="500">
+        <v-btn class="font-weight-bold mr-1 hidden-md-and-down" color="#FFB300" :elevation="hover ? 3 : 0" :class="{ 'on-hover': hover }" depressed outlined>
+          Products
+          <v-icon>mdi-script-text-outline</v-icon>
+        </v-btn>
+      </v-hover>
       <DropDownMenu/>
-      <v-btn color="#2E7D32" class="mr-1 hidden-md-and-down" dark depressed rounded small nuxt>
+      <v-btn class="mr-1 font-weight-bold green--text hidden-md-and-down" text nuxt>
         Documents
         <v-icon class="ml-1">mdi-folder-open-outline</v-icon>
       </v-btn>
-      <v-btn color="#2E7D32" class="mr-1 hidden-md-and-down" dark depressed rounded small nuxt to="/info/news">
+      <v-btn class="font-weight-bold green--text hidden-md-and-down" text nuxt>
         Latest News
         <v-icon class="ml-1">mdi-book-open-outline</v-icon>
       </v-btn>

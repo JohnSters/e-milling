@@ -5,9 +5,9 @@
         <template #activator="{ on: tooltip, attrs }">
           <v-btn
             color="green"
-            class="ml-2"
+            class="ml-2 elevation-2"
             v-bind="attrs"
-            fab dark depressed small
+            dark
             :class="{hover: menuValue}"
             v-on="{ ...tooltip, ...dialog }"
           >

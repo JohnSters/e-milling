@@ -1,8 +1,12 @@
 <template>
+  <!--
+    The default page will be displayed on every created page if it does not have a specified default.
+    Use this page if you want to display items on all pages.
+   -->
   <v-app dark>
     <MainAppBar />
     <v-main>
-        <Nuxt />
+      <Nuxt />
     </v-main>
     <v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
       <v-list>
@@ -50,5 +54,7 @@ export default {
 </script>
 
 <style>
-
+.container {
+  max-width: 1200px;
+}
 </style>

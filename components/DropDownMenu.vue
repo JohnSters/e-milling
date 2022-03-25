@@ -8,13 +8,9 @@
   >
     <template v-slot:activator="{ on, attrs }">
       <v-btn
-        color="#2E7D32"
-        class="mr-1 hidden-md-and-down"
-        dark
-        depressed
-        rounded
-        small
+        class="mr-1 hidden-md-and-down green--text font-weight-bold"
         v-bind="attrs"
+        text
         :class="{active: menuValue}"
         v-on="on"
       >
