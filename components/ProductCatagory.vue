@@ -8,15 +8,19 @@
 					sm="4"
 				>
 					<v-card
-					class="pa-2"
-					tile
-					contain
+						class="mx-auto pa-2"
+						max-width="450"
 					>
-					<v-img src="/products/lucky.jpg"></v-img>
-
-          <v-card-title>
-            Lucky
-          </v-card-title>
+						<v-img
+							src="/products/lucky.jpg"
+							:aspect-ratio="16/9"
+						>
+						</v-img>
+						<v-card-title>
+							<div class="text-h5 font-weight-regular grey--text">
+								Lucky
+							</div>
+						</v-card-title>
 					</v-card>
 				</v-col>
 				<v-col
@@ -24,15 +28,19 @@
 						sm="4"
 				>
 					<v-card
-					class="pa-2"
-					tile
-					contain
+						class="mx-auto pa-2"
+						max-width="450"
 					>
-					<v-img src="/products/super.jpg"></v-img>
-
-          <v-card-title>
-            Super Life
-          </v-card-title>
+						<v-img
+							src="/products/super.jpg"
+							:aspect-ratio="16/9"
+						>
+						</v-img>
+						<v-card-title>
+							<div class="text-h5 font-weight-regular grey--text">
+								Super Life
+							</div>
+						</v-card-title>
 					</v-card>
 				</v-col>
 				<v-col
@@ -40,17 +48,22 @@
 					sm="4"
 				>
 					<v-card
-					class="pa-2"
-					tile
-					contain
+						class="mx-auto pa-2"
+						max-width="450"
 					>
-					<v-img src="/products/Hippo.jpg"></v-img>
-
-          <v-card-title>
-            Hippo
-          </v-card-title>
+						<v-img
+							src="/products/Hippo.jpg"
+							:aspect-ratio="16/9"
+						>
+						</v-img>
+						<v-card-title>
+							<div class="text-h5 font-weight-regular grey--text">
+								Hippo Samp
+							</div>
+						</v-card-title>
 					</v-card>
 				</v-col>
+					<v-col class="flaot-right green--text mt-5 text-h6">View more ></v-col>
 			</v-row>
 		</v-container>
 	</div>
