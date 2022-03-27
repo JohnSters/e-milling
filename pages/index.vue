@@ -26,7 +26,7 @@
             class="intro-text pa-2 mt-6 ml-6"
             flat
           >
-            <h1 class="">eendag Meule is a state of the art Maize Mill, situated in the Maize capital of
+            <h1 class="grey--text text--darken-3">eendag Meule is a state of the art Maize Mill, situated in the Maize capital of
               South Africa. We purchase 100% of our raw materials locally.</h1>
           </v-card>
         </v-col>
