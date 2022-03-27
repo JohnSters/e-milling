@@ -96,7 +96,44 @@
       height="200"
       src="/silos.jpg"
     ><h1 class="text-center">Our Product Range</h1></v-parallax>
-    <div><h1>Hello World</h1></div>
+    <v-row no-gutters>
+      <v-col
+        cols="12"
+        sm="4"
+      >
+        <v-card
+          class="pa-2"
+          outlined
+          tile
+        >
+          One of three columns
+        </v-card>
+      </v-col>
+      <v-col
+        cols="12"
+        sm="4"
+      >
+        <v-card
+          class="pa-2"
+          outlined
+          tile
+        >
+          One of three columns
+        </v-card>
+      </v-col>
+      <v-col
+        cols="12"
+        sm="4"
+      >
+        <v-card
+          class="pa-2"
+          outlined
+          tile
+        >
+          One of three columns
+        </v-card>
+      </v-col>
+    </v-row>
   </div>
 </template>
 
@@ -120,7 +157,6 @@ export default {
   methods: {
     validate() {
       this.$refs.form.validate()
-      console.log(this.email, this.name)
     },
     reset() {
       this.$refs.form.reset()
