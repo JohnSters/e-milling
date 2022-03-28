@@ -31,7 +31,7 @@
       <v-tooltip bottom color="blue">
         <template #activator="{ on, attrs }">
           <v-btn
-            color="blue"
+            color="#b4bc24"
             class="ml-5 elevation-2"
             v-bind="attrs"
             nuxt
@@ -44,20 +44,21 @@
         </template>
         <span>Home Page</span>
       </v-tooltip>
-      <ContactInfo />
+      <ContactInfo/>
       <v-spacer></v-spacer>
       <v-hover v-slot="{ hover }" close-delay="500">
-        <v-btn class="font-weight-bold mr-1 hidden-md-and-down" color="#FFB300" :elevation="hover ? 3 : 0" :class="{ 'on-hover': hover }" depressed outlined>
+        <v-btn class="font-weight-bold mr-1 hidden-md-and-down" color="#9cbc24" :elevation="hover ? 3 : 0"
+               :class="{ 'on-hover': hover }" nuxt to="/products" depressed outlined>
           Products
           <v-icon>mdi-script-text-outline</v-icon>
         </v-btn>
       </v-hover>
       <DropDownMenu/>
-      <v-btn class="mr-1 font-weight-bold green--text hidden-md-and-down" text nuxt>
+      <v-btn class="mr-1 font-weight-bold hidden-md-and-down" color="#148a5c" text nuxt>
         Documents
         <v-icon class="ml-1">mdi-folder-open-outline</v-icon>
       </v-btn>
-      <v-btn class="font-weight-bold green--text hidden-md-and-down" text nuxt>
+      <v-btn class="font-weight-bold hidden-md-and-down" color="#148a5c" text nuxt>
         Latest News
         <v-icon class="ml-1">mdi-book-open-outline</v-icon>
       </v-btn>
@@ -102,16 +103,38 @@ export default {
 }
 
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 </style>

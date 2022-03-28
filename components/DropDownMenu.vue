@@ -8,7 +8,8 @@
   >
     <template v-slot:activator="{ on, attrs }">
       <v-btn
-        class="mr-1 hidden-md-and-down green--text font-weight-bold"
+        class="mr-1 hidden-md-and-down font-weight-bold"
+        color="#148a5c"
         v-bind="attrs"
         text
         :class="{active: menuValue}"
@@ -18,7 +19,7 @@
         <v-icon>mdi-arrow-up</v-icon>
       </v-btn>
     </template>
-    <v-list color="#2E7D32" dark>
+    <v-list color="#148a5c" dark>
       <v-list-item nuxt to="/info/about">
         <v-icon class="mr-2">mdi-account-details</v-icon>
         <v-list-item-title>About Us</v-list-item-title>

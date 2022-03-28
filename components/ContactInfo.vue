@@ -1,10 +1,10 @@
 <template>
   <v-dialog max-width="600">
     <template #activator="{ on: dialog }">
-      <v-tooltip v-model="menuValue" bottom color="green">
+      <v-tooltip v-model="menuValue" bottom color="#148a5c">
         <template #activator="{ on: tooltip, attrs }">
           <v-btn
-            color="green"
+            color="#148a5c"
             class="ml-2 elevation-2"
             v-bind="attrs"
             dark
@@ -18,9 +18,10 @@
       </v-tooltip>
     </template>
     <template v-slot:default="dialog">
-      <v-card>
+      <v-card class="rounded-xl">
         <v-toolbar
-          color="green"
+          color="#148a5c"
+          class="elevation-1"
           dark
         ><h2 class="ma-auto">Contact Us</h2></v-toolbar>
         <v-container>

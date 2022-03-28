@@ -91,49 +91,19 @@
         </v-col>
       </v-row>
     </v-img>
-    <v-toolbar color="green"></v-toolbar>
+    <v-toolbar color="#148a5c" flat></v-toolbar>
     <v-parallax
       height="200"
       src="/silos.jpg"
-    ><h1 class="text-center">Our Product Range</h1></v-parallax>
-    <v-row no-gutters>
-      <v-col
-        cols="12"
-        sm="4"
-      >
-        <v-card
-          class="pa-2"
-          outlined
-          tile
-        >
-          One of three columns
-        </v-card>
-      </v-col>
-      <v-col
-        cols="12"
-        sm="4"
-      >
-        <v-card
-          class="pa-2"
-          outlined
-          tile
-        >
-          One of three columns
-        </v-card>
-      </v-col>
-      <v-col
-        cols="12"
-        sm="4"
-      >
-        <v-card
-          class="pa-2"
-          outlined
-          tile
-        >
-          One of three columns
-        </v-card>
-      </v-col>
-    </v-row>
+    >
+      <v-container><h1 class="product-range text-center font-weight-bold">View our range of top quality products</h1></v-container>
+    </v-parallax>
+    <v-toolbar color="#148a5c" flat></v-toolbar>
+    <CatagoryMain />
+    <v-container>
+      <v-divider class="ma-3"></v-divider>
+      <h1><i>"With unrivalled speed and reliability, Our systems provides a peace of mind packing solution to continuously pack our maize meal, and deliver on time."</i></h1>
+    </v-container>
   </div>
 </template>
 
@@ -152,6 +122,14 @@ export default {
       v => !!v || 'E-mail is required',
       v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
     ],
+    items: [
+      { src: '/products/image1.png', title: 'Delicous nutricious' },
+      { src: '/products/image1.png', title: 'Delicous nutricious' },
+      { src: '/products/image1.png', title: 'Delicous nutricious' },
+      { src: '/products/image1.png', title: 'Delicous nutricious' },
+      { src: '/products/image1.png', title: 'Delicous nutricious' },
+      { src: '/products/image1.png', title: 'Delicous nutricious' },
+    ]
   }),
 
   methods: {
@@ -174,8 +152,13 @@ export default {
   border-color: white !important;
 }
 
+.product-range {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  border-color: black !important;
+}
+
 .contact-form {
-  background-color: rgba(255, 255, 255, 0.5) !important;
+  background-color: rgba(200, 200, 200, 0.8) !important;
   border-color: white !important;
 }
 </style>
