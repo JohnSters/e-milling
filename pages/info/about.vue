@@ -5,7 +5,7 @@
       <v-parallax height="300" src="/entrance.jpg"></v-parallax>
     </template>
   </div>
-  <v-container class="test">
+  <v-container class="test mt-n16">
     <v-row>
       <v-card
         elevation="10"
@@ -54,7 +54,5 @@ export default {
 </script>
 
 <style scoped>
-  .test {
-    margin-top: -100px;
-  }
+
 </style>

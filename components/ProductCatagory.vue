@@ -2,7 +2,7 @@
 	<div>
 		<v-container>
 			<h1 class="grey--text text--darken-2">Product Range</h1>
-			<v-row no-gutters>
+			<v-row>
 				<v-col
 					cols="12"
 					sm="4"
@@ -10,6 +10,7 @@
 					<v-card
 						class="mx-auto pa-2"
 						max-width="450"
+            flat
 					>
 						<v-img
 							src="/products/lucky.jpg"
@@ -30,6 +31,7 @@
 					<v-card
 						class="mx-auto pa-2"
 						max-width="450"
+            flat
 					>
 						<v-img
 							src="/products/super.jpg"
@@ -50,6 +52,7 @@
 					<v-card
 						class="mx-auto pa-2"
 						max-width="450"
+            flat
 					>
 						<v-img
 							src="/products/Hippo.jpg"
