@@ -9,12 +9,12 @@
 				>
 					<v-card
 						class="mx-auto pa-2"
-						max-width="450"
             flat
 					>
 						<v-img
-							src="/products/lucky.jpg"
+							src="/products/image1.jpg"
 							:aspect-ratio="16/9"
+              max-height="400"
 						>
 						</v-img>
 						<v-card-title>
@@ -30,11 +30,10 @@
 				>
 					<v-card
 						class="mx-auto pa-2"
-						max-width="450"
             flat
 					>
 						<v-img
-							src="/products/super.jpg"
+							src="/products/image2.jpg"
 							:aspect-ratio="16/9"
 						>
 						</v-img>
@@ -51,11 +50,10 @@
 				>
 					<v-card
 						class="mx-auto pa-2"
-						max-width="450"
             flat
 					>
 						<v-img
-							src="/products/Hippo.jpg"
+							src="/products/image3.jpg"
 							:aspect-ratio="16/9"
 						>
 						</v-img>

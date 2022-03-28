@@ -99,7 +99,7 @@
       <v-container><h1 class="product-range text-center font-weight-bold">View our range of top quality products</h1></v-container>
     </v-parallax>
     <v-toolbar color="#148a5c" flat></v-toolbar>
-    <CatagoryMain />
+    <main-category />
     <v-container>
       <v-divider class="ma-3"></v-divider>
       <h1><i>"With unrivalled speed and reliability, Our systems provides a peace of mind packing solution to continuously pack our maize meal, and deliver on time."</i></h1>
@@ -110,6 +110,7 @@
 <script>
 export default {
   name: 'IndexPage',
+  components: {},
   data: () => ({
     valid: true,
     name: '',
