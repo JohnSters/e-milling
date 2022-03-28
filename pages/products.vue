@@ -57,6 +57,22 @@ export default {
           case: 21,
           iron: ''
         },
+        {
+          name: '25kg',
+          product_range: 'SUL008',
+          barcode: '6009608990946',
+          baler: '',
+          case: 45,
+          iron: ''
+        },
+        {
+          name: '12.5kg',
+          product_range: 'SUL007',
+          barcode: '6009608990939',
+          baler: '',
+          case: 84,
+          iron: ''
+        },
       ],
     }
   },
