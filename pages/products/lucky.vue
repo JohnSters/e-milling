@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-div>
     <h1>Lucky Super Maize Meal</h1>
     <v-data-table
       :headers="headers"
@@ -30,12 +30,12 @@
         </tr>
       </template>
     </v-data-table>
-  </v-container>
+  </v-div>
 </template>
 
 <script>
 export default {
-  name: "product-range",
+  name: "LuckyMaize",
   data () {
     return {
       search: '',
@@ -47,7 +47,6 @@ export default {
           barcode: '6009608990960',
           baler: '',
           case: 12,
-          iron: ''
         },
         {
           name: '50kg',
@@ -55,7 +54,6 @@ export default {
           barcode: '6009608990953',
           baler: '',
           case: 21,
-          iron: ''
         },
         {
           name: '25kg',
@@ -63,7 +61,6 @@ export default {
           barcode: '6009608990946',
           baler: '',
           case: 45,
-          iron: ''
         },
         {
           name: '12.5kg',
@@ -71,7 +68,41 @@ export default {
           barcode: '6009608990939',
           baler: '',
           case: 84,
-          iron: ''
+        },
+        {
+          name: '10kg',
+          product_range: 'SUL005',
+          barcode: '6009608990922',
+          baler: '',
+          case: 104,
+        },
+        {
+          name: '5kg Poly',
+          product_range: 'SUL003',
+          barcode: '6009608990991',
+          baler: '',
+          case: 195,
+        },
+        {
+          name: '4 x 5kg',
+          product_range: 'SUL003',
+          barcode: '6009608990991',
+          baler: '16009608990998',
+          case: 60,
+        },
+        {
+          name: '4 x 2.5kg',
+          product_range: 'SUL002',
+          barcode: '6009608990984',
+          baler: '16009608990981',
+          case: 96,
+        },
+        {
+          name: '10 x 1kg',
+          product_range: 'SUL001',
+          barcode: '6009608990977',
+          baler: '16009608990974',
+          case: 90,
         },
       ],
     }
@@ -97,7 +128,6 @@ export default {
         { text: 'Barcode Single Unit', value: 'barcode' },
         { text: 'Barcode Baler', value: 'baler' },
         { text: 'Case Per Pallet', value: 'case' },
-        { text: 'View Product', value: 'iron' },
       ]
     },
   },

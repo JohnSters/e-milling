@@ -8,7 +8,7 @@
   >
     <template v-slot:activator="{ on, attrs }">
       <v-btn
-        class="mr-1 hidden-md-and-down font-weight-bold"
+        class="mr-1 hidden-md-and-down font-weight-bold rounded-xl"
         color="#148a5c"
         v-bind="attrs"
         text
@@ -20,7 +20,7 @@
       </v-btn>
     </template>
     <v-list color="#148a5c" dark>
-      <v-list-item nuxt to="/info/about">
+      <v-list-item nuxt to="/info/about-us">
         <v-icon class="mr-2">mdi-account-details</v-icon>
         <v-list-item-title>About Us</v-list-item-title>
       </v-list-item>
@@ -32,7 +32,7 @@
         <v-icon class="mr-2">mdi-account-multiple-outline</v-icon>
         <v-list-item-title>Meet Our Team</v-list-item-title>
       </v-list-item>
-      <v-list-item nuxt to="/info/care">
+      <v-list-item nuxt to="/info/we-care">
         <v-icon class="mr-2">mdi-heart</v-icon>
         <v-list-item-title>We Care</v-list-item-title>
       </v-list-item>
@@ -58,7 +58,7 @@
 
 <script>
 export default {
-  name: "DropDownMenu",
+  name: "InfoDropdown",
   data() {
     return {
       menuValue: null

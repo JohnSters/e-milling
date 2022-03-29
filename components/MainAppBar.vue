@@ -46,21 +46,15 @@
       </v-tooltip>
       <ContactInfo/>
       <v-spacer></v-spacer>
-      <v-hover v-slot="{ hover }" close-delay="500">
-        <v-btn class="font-weight-bold mr-1 hidden-md-and-down" color="#9cbc24" :elevation="hover ? 3 : 0"
-               :class="{ 'on-hover': hover }" nuxt to="/products" depressed outlined>
-          Products
-          <v-icon>mdi-script-text-outline</v-icon>
-        </v-btn>
-      </v-hover>
-      <DropDownMenu/>
-      <v-btn class="mr-1 font-weight-bold hidden-md-and-down" color="#148a5c" text nuxt>
-        Documents
-        <v-icon class="ml-1">mdi-folder-open-outline</v-icon>
-      </v-btn>
+      <ProductDropdown />
       <v-btn class="font-weight-bold hidden-md-and-down" color="#148a5c" text nuxt>
         Latest News
         <v-icon class="ml-1">mdi-book-open-outline</v-icon>
+      </v-btn>
+      <InfoDropdown />
+      <v-btn class="mr-1 font-weight-bold hidden-md-and-down" color="#148a5c" text nuxt>
+        Documents
+        <v-icon class="ml-1">mdi-folder-open-outline</v-icon>
       </v-btn>
     </v-app-bar>
   </div>

@@ -54,7 +54,7 @@
 
 <script>
 export default {
-  name: "we-care"
+  name: "WeCare"
 }
 </script>
 

@@ -1,9 +1,16 @@
 <template>
+  <!-- Index page, or Home page. Must no be confused with default page.
+       This page is injected into the default page and displays where the <Nuxt /> tag is placed.
+   -->
   <div>
     <v-toolbar color="" flat height="78">
       <v-img src="/logo.png" max-width="250"></v-img>
       <v-spacer></v-spacer>
-      Tel: 056-515-1309 <v-divider class="ml-2 mr-2" vertical></v-divider>Sales: 083-256-8151<v-divider class="ml-2 mr-2" vertical></v-divider>email: pa@emilling.co.za
+      Tel: 056-515-1309
+      <v-divider class="ml-2 mr-2" vertical></v-divider>
+      Sales: 083-256-8151
+      <v-divider class="ml-2 mr-2" vertical></v-divider>
+      email: pa@emilling.co.za
       <v-spacer></v-spacer>
       <v-btn icon href="https://www.facebook.com" target="_blank">
         <v-icon color="blue" x-large>mdi-facebook</v-icon>
@@ -26,7 +33,8 @@
             class="intro-text pa-2 mt-6 ml-6"
             flat
           >
-            <h1 class="grey--text text--darken-3">eendag Meule is a state of the art Maize Mill, situated in the Maize capital of
+            <h1 class="grey--text text--darken-3">eendag Meule is a state of the art Maize Mill, situated in the Maize
+              capital of
               South Africa. We purchase 100% of our raw materials locally.</h1>
           </v-card>
         </v-col>
@@ -96,13 +104,17 @@
       height="200"
       src="/silos.jpg"
     >
-      <v-container><h1 class="product-range text-center font-weight-bold">View our range of top quality products</h1></v-container>
+      <v-container><h1 class="product-range text-center font-weight-bold">View our range of top quality products</h1>
+      </v-container>
     </v-parallax>
     <v-toolbar color="#148a5c" flat></v-toolbar>
-    <main-category />
+    <!-- This is the home page products tab. This page have several component imports for the different products (niche, maize, feeds.) -->
+    <ProductCategory/>
+    <!-- END -->
     <v-container>
       <v-divider class="ma-3"></v-divider>
-      <h1><i>"With unrivalled speed and reliability, Our systems provides a peace of mind packing solution to continuously pack our maize meal, and deliver on time."</i></h1>
+      <h1><i>"With unrivalled speed and reliability, Our systems provides a peace of mind packing solution to
+        continuously pack our maize meal, and deliver on time."</i></h1>
     </v-container>
   </div>
 </template>
@@ -110,7 +122,6 @@
 <script>
 export default {
   name: 'IndexPage',
-  components: {},
   data: () => ({
     valid: true,
     name: '',
@@ -123,14 +134,6 @@ export default {
       v => !!v || 'E-mail is required',
       v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
     ],
-    items: [
-      { src: '/products/image1.png', title: 'Delicous nutricious' },
-      { src: '/products/image1.png', title: 'Delicous nutricious' },
-      { src: '/products/image1.png', title: 'Delicous nutricious' },
-      { src: '/products/image1.png', title: 'Delicous nutricious' },
-      { src: '/products/image1.png', title: 'Delicous nutricious' },
-      { src: '/products/image1.png', title: 'Delicous nutricious' },
-    ]
   }),
 
   methods: {
