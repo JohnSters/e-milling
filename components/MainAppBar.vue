@@ -8,26 +8,54 @@
       fixed
       app
     >
-      <v-list>
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-        >
-          <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title v-text="item.title"/>
-          </v-list-item-content>
-        </v-list-item>
+      <!-- -->
+
+      <v-list nav dense>
+        <div v-for="(link, i) in links" :key="i">
+
+          <v-list-item
+            v-if="!link.subLinks"
+            :to="link.to"
+            :active-class="color"
+            avatar
+            class="v-list-item"
+          >
+            <v-list-item-icon>
+              <v-icon>{{ link.icon }}</v-icon>
+            </v-list-item-icon>
+
+            <v-list-item-title v-text="link.text" />
+          </v-list-item>
+
+          <v-list-group
+            v-else
+            :key="link.text"
+            no-action
+            :prepend-icon="link.icon"
+            :value="false"
+          >
+            <template v-slot:activator>
+              <v-list-item-title>{{ link.text }}</v-list-item-title>
+            </template>
+
+            <v-list-item
+              v-for="(sublink) in link.subLinks"
+              :to="sublink.to"
+              :key="sublink.text"
+            >
+              <v-list-item-icon>
+                <v-icon>{{ sublink.icon }}</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>{{ sublink.text }}</v-list-item-title>
+            </v-list-item>
+          </v-list-group>
+        </div>
       </v-list>
+
     </v-navigation-drawer>
     <!--  App Bar Start  -->
     <v-app-bar height="75vh" class="elevation-4" :clipped-left="clipped" shaped fixed app elevate-on-scroll>
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer"/>
+      <v-app-bar-nav-icon class="hidden-md-and-up" @click.stop="drawer = !drawer"/>
       <v-tooltip bottom color="blue">
         <template #activator="{ on, attrs }">
           <v-btn
@@ -47,12 +75,12 @@
       <ContactInfo/>
       <v-spacer></v-spacer>
       <ProductDropdown />
-      <v-btn class="font-weight-bold hidden-md-and-down" color="#148a5c" text nuxt to="/latest-news">
+      <v-btn class="font-weight-bold hidden-sm-and-down" color="#148a5c" text nuxt to="/latest-news">
         Latest News
         <v-icon class="ml-1">mdi-book-open-outline</v-icon>
       </v-btn>
       <InfoDropdown />
-      <v-btn class="mr-1 font-weight-bold hidden-md-and-down" color="#148a5c" text nuxt>
+      <v-btn class="mr-1 font-weight-bold hidden-sm-and-down sm12" color="#148a5c" text nuxt>
         Documents
         <v-icon class="ml-1">mdi-folder-open-outline</v-icon>
       </v-btn>
@@ -69,16 +97,43 @@ export default {
       drawer: false,
       fixed: false,
       menuValue: false,
-      items: [
+      links: [
         {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/',
+          to     : '/dashboard',
+          icon   : 'mdi-view-dashboard',
+          text   : 'Dashboard',
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire',
+          icon     : 'mdi-folder',
+          text     : 'Templates',
+          subLinks : [
+            {
+              text : 'View Templates',
+              to    : '/templates',
+              icon  : 'mdi-view-list'
+            },
+            {
+              text : 'New Template',
+              to    : '/templates/new',
+              icon  : 'mdi-plus'
+            },
+          ]
+        },
+        {
+          icon     : 'mdi-application',
+          text     : 'Applications',
+          subLinks : [
+            {
+              text : 'View Applications',
+              to    : '/apps',
+              icon  : 'mdi-view-list'
+            },
+            {
+              text : 'New Application',
+              to    : '/apps',
+              icon  : 'mdi-plus'
+            },
+          ]
         },
       ],
       miniVariant: false,

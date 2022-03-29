@@ -18,9 +18,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-footer :absolute="!fixed" app>
-      <span>&copy; {{ new Date().getFullYear() }} e-Milling</span>
-    </v-footer>
+    <FooterMain />
   </v-app>
 </template>
 

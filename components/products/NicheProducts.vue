@@ -8,7 +8,7 @@
       >
         <p class="text-center">Plaasjapie Growwe Braaipap</p>
         <v-card class="pa-4" :elevation="hover ? 4 : 2" link>
-          <v-img src="/products/niche1.png"></v-img>
+          <v-img src="/products/niche1.png" height="360"></v-img>
         </v-card>
       </v-col>
     </v-hover>
@@ -19,7 +19,7 @@
       >
         <p class="text-center">Plaasjapie Bittergrowwe Braaipap</p>
         <v-card class="pa-4" :elevation="hover ? 4 : 2" link>
-          <v-img src="/products/niche2.png"></v-img>
+          <v-img src="/products/niche2.png" height="360"></v-img>
         </v-card>
       </v-col>
     </v-hover>
@@ -31,7 +31,7 @@
       >
         <p class="text-center">Plaasjapie Semelverrykte Braaipap</p>
         <v-card class="pa-4" :elevation="hover ? 4 : 2" link>
-          <v-img src="/products/niche3.png"></v-img>
+          <v-img src="/products/niche3.png" height="360"></v-img>
         </v-card>
       </v-col>
     </v-hover>
@@ -42,7 +42,7 @@
       >
         <p class="text-center">Plaasjapie Growwe Geelmeel</p>
         <v-card class="pa-4" :elevation="hover ? 4 : 2" link>
-          <v-img src="/products/niche4.png"></v-img>
+          <v-img src="/products/niche4.png" height="360"></v-img>
         </v-card>
       </v-col>
     </v-hover>
