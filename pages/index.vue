@@ -153,16 +153,14 @@ export default {
 <style>
 .intro-text {
   background-color: rgba(255, 255, 255, 0.2) !important;
-  border-color: white !important;
 }
 
 .product-range {
   background-color: rgba(0, 0, 0, 0.2) !important;
-  border-color: black !important;
 }
 
 .contact-form {
-  background-color: rgba(200, 200, 200, 0.8) !important;
-  border-color: white !important;
+  background-color: rgba(255, 255, 255, .15) !important;
+  backdrop-filter: blur(3px);
 }
 </style>

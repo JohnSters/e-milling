@@ -25,23 +25,23 @@
         <v-icon class="mr-2" small>mdi-circle</v-icon>
         <v-list-item-title>Lucky Super Maize Meal</v-list-item-title>
       </v-list-item>
-      <v-list-item nuxt to="/info/profile">
+      <v-list-item nuxt to="/products/life">
         <v-icon class="mr-2" small>mdi-circle</v-icon>
         <v-list-item-title>Life Super Maize Meal</v-list-item-title>
       </v-list-item>
-      <v-list-item nuxt to="/info/profile">
+      <v-list-item nuxt to="/products/keyona">
         <v-icon class="mr-2" small>mdi-circle</v-icon>
         <v-list-item-title>Keyona Superior - Special Maize Meal</v-list-item-title>
       </v-list-item>
-      <v-list-item nuxt to="/info/profile">
+      <v-list-item nuxt to="/products/hippo">
         <v-icon class="mr-2" small>mdi-circle</v-icon>
         <v-list-item-title>Hippo Samp</v-list-item-title>
       </v-list-item>
-      <v-list-item nuxt to="/info/profile">
+      <v-list-item nuxt to="/products/other">
         <v-icon class="mr-2" small>mdi-circle</v-icon>
         <v-list-item-title>Other Products</v-list-item-title>
       </v-list-item>
-      <v-list-item nuxt to="/info/profile">
+      <v-list-item nuxt to="/products/plaasjapie">
         <v-icon class="mr-2" small>mdi-circle</v-icon>
         <v-list-item-title>Niche Products - Plaasjapie</v-list-item-title>
       </v-list-item>

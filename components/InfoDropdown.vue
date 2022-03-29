@@ -24,11 +24,11 @@
         <v-icon class="mr-2">mdi-account-details</v-icon>
         <v-list-item-title>About Us</v-list-item-title>
       </v-list-item>
-      <v-list-item nuxt to="/info/profile">
+      <v-list-item nuxt to="/info/company-profile">
         <v-icon class="mr-2">mdi-text-box</v-icon>
         <v-list-item-title>Company Profile</v-list-item-title>
       </v-list-item>
-      <v-list-item nuxt to="/info/team">
+      <v-list-item nuxt to="/info/our-team">
         <v-icon class="mr-2">mdi-account-multiple-outline</v-icon>
         <v-list-item-title>Meet Our Team</v-list-item-title>
       </v-list-item>
@@ -36,11 +36,11 @@
         <v-icon class="mr-2">mdi-heart</v-icon>
         <v-list-item-title>We Care</v-list-item-title>
       </v-list-item>
-      <v-list-item nuxt to="/info/green">
+      <v-list-item nuxt to="/info/green-power">
         <v-icon class="mr-2">mdi-forest</v-icon>
         <v-list-item-title>Green Power</v-list-item-title>
       </v-list-item>
-      <v-list-item nuxt to="/info/packing">
+      <v-list-item nuxt to="/info/packing-excellence">
         <v-icon class="mr-2">mdi-package-variant-closed</v-icon>
         <v-list-item-title>Packing Excellence</v-list-item-title>
       </v-list-item>
@@ -48,7 +48,7 @@
         <v-icon class="mr-2">mdi-account-hard-hat</v-icon>
         <v-list-item-title>Vacancies / Jobs</v-list-item-title>
       </v-list-item>
-      <v-list-item nuxt to="/info/terms">
+      <v-list-item nuxt to="/info/terms-conditions">
         <v-icon class="mr-2">mdi-shield-search</v-icon>
         <v-list-item-title>Terms & Conditions</v-list-item-title>
       </v-list-item>
