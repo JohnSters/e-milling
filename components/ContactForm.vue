@@ -1,6 +1,6 @@
 <template>
   <v-card
-    class="xs7"
+    class="ma-6"
     flat
   >
     <h3 class="text-center">Have any questions? Let us contact you.</h3>
@@ -59,16 +59,16 @@
         :disabled="!valid"
         class="rounded-xl hidden-sm-and-up"
         depressed
-        x-small
+        small
         @click="validate"
       >
         Contact Me
       </v-btn>
       <v-btn
         :disabled="!valid"
-        class="rounded-xl hidden-sm-and-up"
+        class="rounded-xl mt-2 hidden-sm-and-up"
         depressed
-        x-small
+        small
         @click="validate"
       >
         Download Brochure

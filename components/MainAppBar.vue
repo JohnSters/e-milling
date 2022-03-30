@@ -106,31 +106,91 @@ export default {
           subLinks : [
             {
               text : 'Lucky Super Maize Meal',
-              to    : '/templates',
+              to    : '/products/lucky',
+              icon  : 'mdi-arrow-right'
+            },
+            {
+              text : 'Life Super Maize Meal',
+              to    : '/products/life',
+              icon  : 'mdi-arrow-right'
+            },
+            {
+              text : 'Keyona Superior',
+              to    : '/products/keyona',
+              icon  : 'mdi-arrow-right'
+            },
+            {
+              text : 'Hippo Samp',
+              to    : '/products/hippo',
+              icon  : 'mdi-arrow-right'
+            },
+            {
+              text : 'Other Products',
+              to    : '/products/other',
+              icon  : 'mdi-arrow-right'
+            },
+            {
+              text : 'Plaasjapie',
+              to    : '/products/plaasjapie',
+              icon  : 'mdi-arrow-right'
+            },
+          ]
+        },
+        {
+          to     : '/latest-news',
+          icon   : 'mdi-newspaper-variant',
+          text   : 'Latest News',
+        },
+        {
+          icon     : 'mdi-application',
+          text     : 'Company Info',
+          subLinks : [
+            {
+              text : 'About Us',
+              to    : '/info/about-us',
               icon  : 'mdi-view-list'
             },
             {
-              text : 'New Template',
-              to    : '/templates/new',
+              text : 'Company Profile',
+              to    : '/info/company-profile',
+              icon  : 'mdi-plus'
+            },
+            {
+              text : 'Meet Our Team',
+              to    : '/info/our-team',
+              icon  : 'mdi-plus'
+            },
+            {
+              text : 'We Care',
+              to    : '/info/we-care',
+              icon  : 'mdi-plus'
+            },
+            {
+              text : 'Green Power',
+              to    : '/info/green-power',
+              icon  : 'mdi-plus'
+            },
+            {
+              text : 'Packing Excellence',
+              to    : '/info/packing-excellence',
+              icon  : 'mdi-plus'
+            },
+            {
+              text : 'Vacancies / Jobs',
+              to    : '#',
+              icon  : 'mdi-plus'
+            },
+            {
+              text : 'Terms & Conditions',
+              to    : '/info/terms-conditions',
               icon  : 'mdi-plus'
             },
           ]
         },
         {
-          icon     : 'mdi-application',
-          text     : 'Applications',
-          subLinks : [
-            {
-              text : 'View Applications',
-              to    : '/apps',
-              icon  : 'mdi-view-list'
-            },
-            {
-              text : 'New Application',
-              to    : '/apps',
-              icon  : 'mdi-plus'
-            },
-          ]
+          to     : '/documents',
+          icon   : 'mdi-newspaper-variant',
+          text   : 'Documents',
         },
       ],
       miniVariant: false,

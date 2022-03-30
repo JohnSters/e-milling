@@ -1,7 +1,7 @@
 <template>
   <!-- Home page product category. Imports several other components /components/products -->
   <v-container class="mt-6">
-    <v-tabs centered>
+    <v-tabs centered color="darkgreen">
       <v-tab>
         Maize Range
       </v-tab>

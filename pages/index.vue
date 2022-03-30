@@ -4,7 +4,8 @@
    -->
   <div>
     <v-toolbar color="" flat height="78">
-      <v-img src="/logo.png" max-width="250"></v-img>
+      <v-img class="hidden-sm-and-down" src="/logo.png" max-width="240"></v-img>
+      <v-img class="ml-6 mt-6 hidden-md-and-up" src="/logo.png" max-width="240"></v-img>
       <v-spacer></v-spacer>
       <div class="hidden-sm-and-down">
         Tel: 056-515-1309
@@ -14,17 +15,9 @@
         email: pa@emilling.co.za
       </div>
       <v-spacer></v-spacer>
-      <v-btn class="hidden-sm-and-down" icon href="https://www.facebook.com" target="_blank">
-        <v-icon color="blue" x-large>mdi-facebook</v-icon>
-      </v-btn>
-      <v-btn class="hidden-sm-and-down" icon>
-        <v-icon color="green" x-large>mdi-whatsapp</v-icon>
-      </v-btn>
-      <v-btn class="hidden-sm-and-down" icon>
-        <v-icon color="purple" x-large>mdi-instagram</v-icon>
-      </v-btn>
+      <v-btn class="hidden-sm-and-down" color="blue" dark>Find us on facebook <v-icon>mdi-facebook</v-icon></v-btn>
     </v-toolbar>
-    <v-carousel height="85vh" interval="9000" continuous :show-arrows="false" hide-delimiter-background hide-delimiters cycle>
+    <v-carousel class="hidden-sm-and-down" height="84vh" interval="9000" continuous :show-arrows="false" hide-delimiter-background hide-delimiters cycle>
       <v-carousel-item
         v-for="(item,i) in items"
         :key="i"
@@ -43,21 +36,12 @@
         </v-row>
       </v-carousel-item>
     </v-carousel>
-    <v-card class="ma-4 pa-2 text-center hidden-md-and-up">
-      <v-btn class="hidden-md-and-up" icon href="https://www.facebook.com" target="_blank">
-        <v-icon color="blue" x-large>mdi-facebook</v-icon>
-      </v-btn>
-      <v-btn class="hidden-md-and-up" icon>
-        <v-icon color="green" x-large>mdi-whatsapp</v-icon>
-      </v-btn>
-      <v-btn class="hidden-md-and-up" icon>
-        <v-icon color="purple" x-large>mdi-instagram</v-icon>
-      </v-btn>
+    <v-card class="ma-4 pa-2 text-center hidden-md-and-up" flat>
+      <v-btn class="hidden-md-and-up" color="blue" dark>Find us on facebook <v-icon>mdi-facebook</v-icon></v-btn>
     </v-card>
-    <h4 class="ma-6 hidden-sm-and-up">eendag Meule is a state of the art Maize Mill, situated in the Maize capital of South Africa. We purchase 100% of our raw materials locally.</h4>
     <v-toolbar color="#148a5c" flat></v-toolbar>
     <v-parallax
-      height="200"
+      height="400"
       src="/silos.jpg"
     >
       <v-container><h1 class="product-range text-center font-weight-bold">View our range of top quality products</h1>
@@ -66,6 +50,8 @@
     <v-toolbar color="#148a5c" flat></v-toolbar>
     <!-- This is the home page products tab. This page have several component imports for the different products (niche, maize, feeds.) -->
     <ProductCategory/>
+    <div class="mt-6 mb-6 text-center hidden-sm-and-down"><v-btn depressed nuxt to="/products/product-main">Products Page</v-btn> - <v-btn depressed>Download Brochure <v-icon class="ml-1">mdi-download</v-icon></v-btn></div>
+    <div class="mt-2 ml-6 hidden-md-and-up"><v-btn rounded small depressed>Products Page</v-btn><v-btn class="mt-2" rounded small depressed>Download Brochure <v-icon class="ml-1">mdi-download</v-icon></v-btn></div>
     <!-- END -->
     <br>
     <v-row
@@ -86,8 +72,11 @@
 </template>
 
 <script>
+
+
 export default {
   name: 'IndexPage',
+
   data: () => ({
     valid: true,
     name: '',

@@ -13,7 +13,6 @@
         dark
       >
         <v-card-text>
-          Coming Soon.
           <v-btn
             v-for="icon in icons"
             :key="icon"

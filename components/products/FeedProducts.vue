@@ -24,7 +24,6 @@
       </v-col>
     </v-hover>
   </v-row>
-  <div class="mt-6 text-center"><v-btn depressed>Products Page</v-btn> - <v-btn depressed>Download Brochure <v-icon class="ml-1">mdi-download</v-icon></v-btn></div>
   </v-container>
 </template>
 

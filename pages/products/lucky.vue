@@ -92,11 +92,11 @@
                 <v-card-actions>
                   <v-spacer></v-spacer>
                   <v-btn
-                    color="primary"
+                    color="darkgreen"
                     text
                     @click="dialog = false"
                   >
-                    I accept
+                    Close
                   </v-btn>
                 </v-card-actions>
               </v-card>
