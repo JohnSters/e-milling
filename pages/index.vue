@@ -24,25 +24,25 @@
         <v-icon color="purple" x-large>mdi-instagram</v-icon>
       </v-btn>
     </v-toolbar>
-    <v-img class="hidden-sm-and-down" src="/office.jpg">
-      <v-row>
-        <v-col
-          cols="12"
-          lg="8"
-          md="8"
+    <v-carousel height="85vh" interval="9000" continuous :show-arrows="false" hide-delimiter-background hide-delimiters cycle>
+      <v-carousel-item
+        v-for="(item,i) in items"
+        :key="i"
+        :src="item.src"
+        reverse-transition="fade-transition"
+        transition="fade-transition"
+      >
+        <v-row
+          class="fill-height"
+          align="center"
+          justify="center"
         >
-          <v-card
-            class="intro-text pa-2 mt-6 ml-6 hidden-md-and-down"
-            flat
-            dark
-          >
-            <h2>eendag Meule is a state of the art Maize Mill, situated in the Maize
-              capital of South Africa. We purchase 100% of our raw materials locally.</h2>
+          <v-card class="intro-text ma-6 pa-6 rounded-xl" dark>
+            <h1><i>"{{ item.msg }}"</i></h1>
           </v-card>
-        </v-col>
-        <ContactForm />
-      </v-row>
-    </v-img>
+        </v-row>
+      </v-carousel-item>
+    </v-carousel>
     <v-card class="ma-4 pa-2 text-center hidden-md-and-up">
       <v-btn class="hidden-md-and-up" icon href="https://www.facebook.com" target="_blank">
         <v-icon color="blue" x-large>mdi-facebook</v-icon>
@@ -55,7 +55,6 @@
       </v-btn>
     </v-card>
     <h4 class="ma-6 hidden-sm-and-up">eendag Meule is a state of the art Maize Mill, situated in the Maize capital of South Africa. We purchase 100% of our raw materials locally.</h4>
-    <ContactForm  class="hidden-sm-and-up"/>
     <v-toolbar color="#148a5c" flat></v-toolbar>
     <v-parallax
       height="200"
@@ -68,12 +67,20 @@
     <!-- This is the home page products tab. This page have several component imports for the different products (niche, maize, feeds.) -->
     <ProductCategory/>
     <!-- END -->
+    <br>
+    <v-row
+      class="fill-height"
+      align="center"
+      justify="center"
+    >
+      <v-card class="pa-lg-4" width="500">
+        <ContactForm />
+      </v-card>
+    </v-row>
     <v-container>
       <v-divider class="ma-3"></v-divider>
-      <h1 class="grey--text text--darken-2 hidden-sm-and-down"><i>"With unrivalled speed and reliability, Our systems provides a peace of mind packing solution to
-        continuously pack our maize meal, and deliver on time."</i></h1>
-      <h4 class="grey--text text--darken-2 hidden-md-and-up"><i>"With unrivalled speed and reliability, Our systems provides a peace of mind packing solution to
-        continuously pack our maize meal, and deliver on time."</i></h4>
+      <h1 class="grey--text text--darken-2 text-center hidden-sm-and-down"><i>"Eendag Meule Bothaville (Pty) Ltd is driven by customer satisfaction and we strive to keep customer relations strong by supplying the best range of quality products at competitive prices."</i></h1>
+      <h4 class="grey--text text--darken-2 text-center hidden-md-and-up"><i>"Eendag Meule Bothaville (Pty) Ltd is driven by customer satisfaction and we strive to keep customer relations strong by supplying the best range of quality products at competitive prices."</i></h4>
     </v-container>
   </div>
 </template>
@@ -84,6 +91,20 @@ export default {
   data: () => ({
     valid: true,
     name: '',
+    items: [
+      {
+        src: '/office.jpg', msg: 'Eendag Meule is an advanced Maize Mill, situated in the Maize capital of South Africa. We purchase 100% of our raw materials locally.'
+      },
+      {
+        src: '/factory-inside.jpg', msg: 'Eendag Meule recently installed a Westweigh Systems; fully automatic - Premiertech (Chronos bag) placing system. This makes us the first mill in South Africa to install such a bagging system.'
+      },
+      {
+        src: '/office-inside.jpg', msg: 'With unrivalled speed and reliability, Our systems provides a peace of mind packing solution to continuously pack our maize meal, and deliver on time.'
+      },
+      {
+        src: '/machinery6.jpg', msg: 'With packing speeds of 20 bags/min for 10kg and 12.5kg. Up to 18 bags per minute for 25kg and 10 bags/min on 50kg; our packing quality, and speed is unmatched'
+      },
+    ],
     nameRules: [
       v => !!v || 'Name is required',
       v => (v && v.length <= 10) || 'Name must be less than 10 characters',
@@ -109,9 +130,18 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.v-carousel .v-window-item {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: 5000ms !important;
+}
+
+
 .intro-text {
-  background-color: rgba(0, 0, 0, 0.2) !important;
+  background-color: rgba(0, 0, 0, .15) !important;
+  backdrop-filter: blur(3px);
 }
 
 .product-range {
@@ -119,7 +149,7 @@ export default {
 }
 
 .contact-form {
-  background-color: rgba(255, 255, 255, .15) !important;
+  background-color: rgba(0, 0, 0, .15) !important;
   backdrop-filter: blur(3px);
 }
 </style>

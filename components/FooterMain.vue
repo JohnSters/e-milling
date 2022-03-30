@@ -13,6 +13,7 @@
         dark
       >
         <v-card-text>
+          Coming Soon.
           <v-btn
             v-for="icon in icons"
             :key="icon"
@@ -39,6 +40,7 @@
 
 <script>
 export default {
+
   name: 'bottom-footer',
   data: () => ({
     icons: [

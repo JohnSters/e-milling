@@ -1,84 +1,81 @@
 <template>
-    <v-col
-      cols="12"
-      lg="4"
-      md="4"
-      sm="12"
+  <v-card
+    class="xs7"
+    flat
+  >
+    <h3 class="text-center">Have any questions? Let us contact you.</h3>
+    <v-form
+      ref="form"
+      v-model="valid"
+      lazy-validation
     >
-      <v-card
-        class="contact-form pa-lg-4 mt-lg-4 mr-lg-6 pa-md-4 mt-md-4 mr-md-6 rounded"
-        flat
+      <v-text-field
+        v-model="name"
+        :counter="10"
+        :rules="nameRules"
+        label="Name"
+        required
+      ></v-text-field>
+
+      <v-text-field
+        label="Number"
+        required
+      ></v-text-field>
+
+      <v-text-field
+        v-model="email"
+        :rules="emailRules"
+        label="E-mail"
+        required
+      ></v-text-field>
+
+      <v-textarea
+        label="Short Message"
+      ></v-textarea>
+
+      <v-checkbox
+        label="Receive News Letter?"
+        required
+      ></v-checkbox>
+
+      <v-btn
+        :disabled="!valid"
+        class="mr-4 hidden-sm-and-down"
+        depressed
+        @click="validate"
       >
-        <h3 class="text-center">Want to find out more?</h3>
-        <v-form
-          ref="form"
-          v-model="valid"
-          lazy-validation
-        >
-          <v-text-field
-            v-model="name"
-            :counter="10"
-            :rules="nameRules"
-            label="Name"
-            required
-          ></v-text-field>
+        Contact Me
+      </v-btn>
+      <v-btn
+        :disabled="!valid"
+        class="mr-4 hidden-sm-and-down"
+        depressed
+        @click="validate"
+      >
+        Download Brochure
+      </v-btn>
 
-          <v-text-field
-            label="Number"
-            required
-          ></v-text-field>
+      <v-btn
+        :disabled="!valid"
+        class="rounded-xl hidden-sm-and-up"
+        depressed
+        x-small
+        @click="validate"
+      >
+        Contact Me
+      </v-btn>
+      <v-btn
+        :disabled="!valid"
+        class="rounded-xl hidden-sm-and-up"
+        depressed
+        x-small
+        @click="validate"
+      >
+        Download Brochure
+      </v-btn>
 
-          <v-text-field
-            v-model="email"
-            :rules="emailRules"
-            label="E-mail"
-            required
-          ></v-text-field>
-
-          <v-checkbox
-            label="Receive News Letter?"
-            required
-          ></v-checkbox>
-
-          <v-btn
-            :disabled="!valid"
-            class="mr-4 hidden-sm-and-down"
-            depressed
-            @click="validate"
-          >
-            Contact Me
-          </v-btn>
-          <v-btn
-            :disabled="!valid"
-            class="mr-4 hidden-sm-and-down"
-            depressed
-            @click="validate"
-          >
-            Download Brochure
-          </v-btn>
-
-          <v-btn
-            :disabled="!valid"
-            class="rounded-xl hidden-sm-and-up"
-            x-small
-            depressed
-            @click="validate"
-          >
-            Contact Me
-          </v-btn>
-          <v-btn
-            :disabled="!valid"
-            class="rounded-xl hidden-sm-and-up"
-            x-small
-            depressed
-            @click="validate"
-          >
-            Download Brochure
-          </v-btn>
-
-        </v-form>
-      </v-card>
-    </v-col>
+    </v-form>
+  </v-card>
 </template>
 
 <script>

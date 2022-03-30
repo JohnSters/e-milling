@@ -16,8 +16,6 @@
           <v-list-item
             v-if="!link.subLinks"
             :to="link.to"
-            :active-class="color"
-            avatar
             class="v-list-item"
           >
             <v-list-item-icon>
@@ -56,10 +54,9 @@
     <!--  App Bar Start  -->
     <v-app-bar height="75vh" class="elevation-4" :clipped-left="clipped" shaped fixed app elevate-on-scroll>
       <v-app-bar-nav-icon class="hidden-md-and-up" @click.stop="drawer = !drawer"/>
-      <v-tooltip bottom color="blue">
+      <v-tooltip bottom>
         <template #activator="{ on, attrs }">
           <v-btn
-            color="#b4bc24"
             class="ml-5 elevation-2"
             v-bind="attrs"
             nuxt
@@ -99,16 +96,16 @@ export default {
       menuValue: false,
       links: [
         {
-          to     : '/dashboard',
-          icon   : 'mdi-view-dashboard',
-          text   : 'Dashboard',
+          to     : '/',
+          icon   : 'mdi-home',
+          text   : 'Home',
         },
         {
           icon     : 'mdi-folder',
-          text     : 'Templates',
+          text     : 'Products',
           subLinks : [
             {
-              text : 'View Templates',
+              text : 'Lucky Super Maize Meal',
               to    : '/templates',
               icon  : 'mdi-view-list'
             },
@@ -149,6 +146,10 @@ export default {
 .v-btn.active .v-icon {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
+}
+
+.v-application--is-ltr .v-list--dense.v-list--nav .v-list-group--no-action > .v-list-group__items > .v-list-item {
+  padding: 0 8px;
 }
 
 @keyframes shake {
