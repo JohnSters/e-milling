@@ -9,6 +9,21 @@
       app
     >
       <!-- -->
+      <v-card class="ma-2">
+        <v-list-item>
+          <v-list-item-content>
+            <v-list-item-title class="text-h6">
+              <v-img src="/logo.png"></v-img>
+            </v-list-item-title>
+            <v-list-item-subtitle>
+              <br>
+              <h4 class="text-center">Contact: 056 515 1309</h4>
+            </v-list-item-subtitle>
+          </v-list-item-content>
+        </v-list-item>
+      </v-card>
+
+      <v-divider></v-divider>
 
       <v-list nav dense>
         <div v-for="(link, i) in links" :key="i">
@@ -101,7 +116,7 @@ export default {
           text   : 'Home',
         },
         {
-          icon     : 'mdi-folder',
+          icon     : 'mdi-shipping-pallet',
           text     : 'Products',
           subLinks : [
             {
@@ -142,13 +157,13 @@ export default {
           text   : 'Latest News',
         },
         {
-          icon     : 'mdi-application',
+          icon     : 'mdi-information-variant',
           text     : 'Company Info',
           subLinks : [
             {
               text : 'About Us',
               to    : '/info/about-us',
-              icon  : 'mdi-view-list'
+              icon  : 'mdi-plus'
             },
             {
               text : 'Company Profile',

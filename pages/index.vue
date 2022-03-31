@@ -4,8 +4,8 @@
    -->
   <div>
     <v-toolbar color="" flat height="78">
-      <v-img class="hidden-sm-and-down" src="/logo.png" max-width="240"></v-img>
-      <v-img class="ml-6 mt-6 hidden-md-and-up" src="/logo.png" max-width="240"></v-img>
+      <v-img class="hidden-sm-and-down" max-width="240" src="/logo.png"></v-img>
+      <v-img class="ml-6 mt-6 hidden-md-and-up" max-width="240" src="/logo.png"></v-img>
       <v-spacer></v-spacer>
       <div class="hidden-sm-and-down">
         Tel: 056-515-1309
@@ -15,9 +15,12 @@
         email: pa@emilling.co.za
       </div>
       <v-spacer></v-spacer>
-      <v-btn class="hidden-sm-and-down" color="blue" dark>Find us on facebook <v-icon>mdi-facebook</v-icon></v-btn>
+      <v-btn class="hidden-sm-and-down" color="blue" dark>Find us on facebook
+        <v-icon>mdi-facebook</v-icon>
+      </v-btn>
     </v-toolbar>
-    <v-carousel class="hidden-sm-and-down" height="84vh" interval="9000" continuous :show-arrows="false" hide-delimiter-background hide-delimiters cycle>
+    <v-carousel :show-arrows="false" class="hidden-sm-and-down" continuous cycle height="84vh"
+                hide-delimiter-background hide-delimiters interval="9000">
       <v-carousel-item
         v-for="(item,i) in items"
         :key="i"
@@ -26,8 +29,8 @@
         transition="fade-transition"
       >
         <v-row
-          class="fill-height"
           align="center"
+          class="fill-height"
           justify="center"
         >
           <v-card class="intro-text ma-6 pa-6 rounded-xl" dark>
@@ -37,7 +40,9 @@
       </v-carousel-item>
     </v-carousel>
     <v-card class="ma-4 pa-2 text-center hidden-md-and-up" flat>
-      <v-btn class="hidden-md-and-up" color="blue" dark>Find us on facebook <v-icon>mdi-facebook</v-icon></v-btn>
+      <v-btn class="hidden-md-and-up" color="blue" dark>Find us on facebook
+        <v-icon>mdi-facebook</v-icon>
+      </v-btn>
     </v-card>
     <v-toolbar color="#148a5c" flat></v-toolbar>
     <v-parallax
@@ -50,23 +55,30 @@
     <v-toolbar color="#148a5c" flat></v-toolbar>
     <!-- This is the home page products tab. This page have several component imports for the different products (niche, maize, feeds.) -->
     <ProductCategory/>
-    <div class="mt-6 mb-6 text-center hidden-sm-and-down"><v-btn depressed nuxt to="/products/product-main">Products Page</v-btn> - <v-btn depressed>Download Brochure <v-icon class="ml-1">mdi-download</v-icon></v-btn></div>
-    <div class="mt-2 ml-6 hidden-md-and-up"><v-btn rounded small depressed>Products Page</v-btn><v-btn class="mt-2" rounded small depressed>Download Brochure <v-icon class="ml-1">mdi-download</v-icon></v-btn></div>
+    <div class="mt-6 mb-6 text-center hidden-sm-and-down">
+      <v-btn depressed nuxt to="/products/product-main">Products Page</v-btn>
+      -
+      <v-btn depressed>Download Brochure
+        <v-icon class="ml-1">mdi-download</v-icon>
+      </v-btn>
+    </div>
+    <div class="mt-2 ml-6 hidden-md-and-up">
+      <v-btn depressed rounded small>Products Page</v-btn>
+      <v-btn class="mt-2" depressed rounded small>Download Brochure
+        <v-icon class="ml-1">mdi-download</v-icon>
+      </v-btn>
+    </div>
     <!-- END -->
     <br>
-    <v-row
-      class="fill-height"
-      align="center"
-      justify="center"
-    >
-      <v-card class="pa-lg-4" width="500">
-        <ContactForm />
-      </v-card>
-    </v-row>
+    <ContactForm/>
     <v-container>
       <v-divider class="ma-3"></v-divider>
-      <h1 class="grey--text text--darken-2 text-center hidden-sm-and-down"><i>"Eendag Meule Bothaville (Pty) Ltd is driven by customer satisfaction and we strive to keep customer relations strong by supplying the best range of quality products at competitive prices."</i></h1>
-      <h4 class="grey--text text--darken-2 text-center hidden-md-and-up"><i>"Eendag Meule Bothaville (Pty) Ltd is driven by customer satisfaction and we strive to keep customer relations strong by supplying the best range of quality products at competitive prices."</i></h4>
+      <h1 class="grey--text text--darken-2 text-center hidden-sm-and-down"><i>"Eendag Meule Bothaville (Pty) Ltd is
+        driven by customer satisfaction and we strive to keep customer relations strong by supplying the best range of
+        quality products at competitive prices."</i></h1>
+      <h4 class="grey--text text--darken-2 text-center hidden-md-and-up"><i>"Eendag Meule Bothaville (Pty) Ltd is driven
+        by customer satisfaction and we strive to keep customer relations strong by supplying the best range of quality
+        products at competitive prices."</i></h4>
     </v-container>
   </div>
 </template>
@@ -82,16 +94,20 @@ export default {
     name: '',
     items: [
       {
-        src: '/office.jpg', msg: 'Eendag Meule is an advanced Maize Mill, situated in the Maize capital of South Africa. We purchase 100% of our raw materials locally.'
+        src: '/office.jpg',
+        msg: 'Eendag Meule is an advanced Maize Mill, situated in the Maize capital of South Africa. We purchase 100% of our raw materials locally.'
       },
       {
-        src: '/factory-inside.jpg', msg: 'Eendag Meule recently installed a Westweigh Systems; fully automatic - Premiertech (Chronos bag) placing system. This makes us the first mill in South Africa to install such a bagging system.'
+        src: '/factory-inside.jpg',
+        msg: 'Eendag Meule recently installed a Westweigh Systems; fully automatic - Premiertech (Chronos bag) placing system. This makes us the first mill in South Africa to install such a bagging system.'
       },
       {
-        src: '/office-inside.jpg', msg: 'With unrivalled speed and reliability, Our systems provides a peace of mind packing solution to continuously pack our maize meal, and deliver on time.'
+        src: '/office-inside.jpg',
+        msg: 'With unrivalled speed and reliability, Our systems provides a peace of mind packing solution to continuously pack our maize meal, and deliver on time.'
       },
       {
-        src: '/machinery6.jpg', msg: 'With packing speeds of 20 bags/min for 10kg and 12.5kg. Up to 18 bags per minute for 25kg and 10 bags/min on 50kg; our packing quality, and speed is unmatched'
+        src: '/machinery6.jpg',
+        msg: 'With packing speeds of 20 bags/min for 10kg and 12.5kg. Up to 18 bags per minute for 25kg and 10 bags/min on 50kg; our packing quality, and speed is unmatched'
       },
     ],
     nameRules: [

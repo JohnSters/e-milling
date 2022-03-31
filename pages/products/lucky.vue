@@ -1,7 +1,8 @@
 <template>
   <div>
+    <div class="large hidden-sm-and-down">
       <template>
-        <v-parallax height="300" src="/factory-inside.jpg"></v-parallax>
+        <v-parallax class="" height="300" src="/factory-inside.jpg"></v-parallax>
       </template>
       <v-container class="about">
         <v-row>
@@ -33,13 +34,14 @@
                 </template>
               </v-data-table>
             </v-container>
-            <v-btn class="ma-6">Download Brochure</v-btn>
+            <v-btn class="ma-6 hidden-sm-and-down">Download Brochure</v-btn>
             <v-dialog
               v-model="dialog"
               width="800"
             >
               <template v-slot:activator="{ on, attrs }">
                 <v-btn
+                  class="hidden-sm-and-down"
                   color="red lighten-2"
                   dark
                   v-bind="attrs"
@@ -101,11 +103,120 @@
                 </v-card-actions>
               </v-card>
             </v-dialog>
-            <v-btn class="ml-6">Download Nutritional Information</v-btn>
+            <v-btn class="ml-6 hidden-sm-and-down">Download Nutritional Information</v-btn>
           </v-card>
         </v-row>
       </v-container>
-    <ProductCategory />
+      <ProductCategory />
+    </div>
+
+    <!-- Mobile design viewport -->
+    <div class="mobile hidden-md-and-up">
+      <v-toolbar color="darkgreen" height="160"></v-toolbar>
+      <v-container class="about">
+        <v-row>
+          <v-card flat tile>
+            <v-container>
+              <h3 class="grey--text text--darken-2">Lucky Super Maize Meal</h3>
+              <v-divider class="mt-3 mb-3"></v-divider>
+              <v-card class="ma-auto elevation-4" shaped color="darkgreen" width="500" flat>
+                <v-img src="/products/lucky-super-maize-meal.png" max-width="500"></v-img>
+              </v-card>
+              <v-data-table
+                :custom-filter="filterOnlyCapsText"
+                :headers="headers"
+                :items="products"
+                :search="search"
+                class="elevation-0"
+                item-key="name"
+              >
+                <template #top>
+                  <v-text-field
+                    v-model="search"
+                    class="mx-4"
+                    label="Search (UPPER CASE ONLY)"
+                  ></v-text-field>
+                </template>
+              </v-data-table>
+            </v-container>
+            <v-btn class="ml-3" small rounded>Download Brochure</v-btn>
+            <v-dialog
+              v-model="dialog"
+              width="800"
+            >
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn
+                  class="ml-3 mt-2"
+                  color="darkgreen"
+                  dark
+                  small
+                  rounded
+                  v-bind="attrs"
+                  v-on="on"
+                >
+                  Nutritional Information
+                </v-btn>
+              </template>
+
+              <v-card>
+                <v-card-title class="text-h5 grey lighten-2">
+                  Lucky Super Maize Meal
+                </v-card-title>
+
+                <v-card-text>
+                  <h4 class="text-center">Typical Nutritional Information <br> Serving size: 100g meal (Uncooked)</h4>
+                  <v-simple-table>
+                    <template v-slot:default>
+                      <thead>
+                      <tr>
+                        <th class="text-left">
+                        </th>
+                        <th class="text-left">
+                          Per Serving
+                        </th>
+                        <th class="text-left">
+                        </th>
+                        <th class="text-left">
+                          %RDA
+                        </th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr
+                        v-for="item in items"
+                        :key="item.name"
+                      >
+                        <td>{{ item.name }}</td>
+                        <td>{{ item.serving }}</td>
+                        <td>{{ item.weight }}</td>
+                        <td>{{ item.rda }}</td>
+                      </tr>
+                      </tbody>
+                    </template>
+                  </v-simple-table>
+                </v-card-text>
+
+                <v-divider></v-divider>
+                <p class="pa-3 text-center">RDA = Recommended Dietary Allowance for individuals 13 years and older.</p>
+                <v-card-actions>
+                  <v-spacer></v-spacer>
+                  <v-btn
+                    color="darkgreen"
+                    text
+                    @click="dialog = false"
+                  >
+                    Close
+                  </v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-dialog>
+            <v-btn class="ml-3 mt-2 mb-3" small rounded>Download Nutritional Information</v-btn>
+          </v-card>
+        </v-row>
+      </v-container>
+      <ProductCategory />
+    </div>
+
   </div>
 </template>
 

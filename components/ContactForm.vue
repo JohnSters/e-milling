@@ -1,81 +1,83 @@
 <template>
-  <v-card
-    class="ma-6"
-    flat
-  >
-    <h3 class="text-center">Have any questions? Let us contact you.</h3>
-    <v-form
-      ref="form"
-      v-model="valid"
-      lazy-validation
-    >
-      <v-text-field
-        v-model="name"
-        :counter="10"
-        :rules="nameRules"
-        label="Name"
-        required
-      ></v-text-field>
-
-      <v-text-field
-        label="Number"
-        required
-      ></v-text-field>
-
-      <v-text-field
-        v-model="email"
-        :rules="emailRules"
-        label="E-mail"
-        required
-      ></v-text-field>
-
-      <v-textarea
-        label="Short Message"
-      ></v-textarea>
-
-      <v-checkbox
-        label="Receive News Letter?"
-        required
-      ></v-checkbox>
-
-      <v-btn
-        :disabled="!valid"
-        class="mr-4 hidden-sm-and-down"
-        depressed
-        @click="validate"
+  <v-container class="contact">
+    <v-card class="pa-4 rounded-xl elevation-4 darkgreen" dark>
+      <h3 class="text-center">Have any questions? Let us contact you.</h3>
+      <v-form
+        ref="form"
+        v-model="valid"
+        lazy-validation
       >
-        Contact Me
-      </v-btn>
-      <v-btn
-        :disabled="!valid"
-        class="mr-4 hidden-sm-and-down"
-        depressed
-        @click="validate"
-      >
-        Download Brochure
-      </v-btn>
+        <v-text-field
+          v-model="name"
+          :counter="10"
+          :rules="nameRules"
+          label="Name"
+          required
+        ></v-text-field>
 
-      <v-btn
-        :disabled="!valid"
-        class="rounded-xl hidden-sm-and-up"
-        depressed
-        small
-        @click="validate"
-      >
-        Contact Me
-      </v-btn>
-      <v-btn
-        :disabled="!valid"
-        class="rounded-xl mt-2 hidden-sm-and-up"
-        depressed
-        small
-        @click="validate"
-      >
-        Download Brochure
-      </v-btn>
+        <v-text-field
+          label="Number"
+          required
+        ></v-text-field>
 
-    </v-form>
-  </v-card>
+        <v-text-field
+          v-model="email"
+          :rules="emailRules"
+          label="E-mail"
+          required
+        ></v-text-field>
+
+        <v-textarea
+          label="Short Message"
+        ></v-textarea>
+
+        <v-checkbox
+          label="Receive News Letter?"
+          required
+        ></v-checkbox>
+
+        <v-btn
+          :disabled="!valid"
+          class="mr-4 blue-grey--text hidden-sm-and-down"
+          color="white"
+          depressed
+          @click="validate"
+        >
+          Contact Me
+        </v-btn>
+        <v-btn
+          class="mr-4 blue-grey--text hidden-sm-and-down"
+          color="white"
+          depressed
+          @click="validate"
+        >
+          Download Brochure
+        </v-btn>
+
+        <v-btn
+          :disabled="!valid"
+          class="rounded-xl blue-grey--text hidden-sm-and-up"
+          color="white"
+          depressed
+          small
+          @click="validate"
+        >
+          Contact Me
+        </v-btn>
+        <v-btn
+          :disabled="!valid"
+          class="rounded-xl mt-2 blue-grey--text hidden-sm-and-up"
+          color="white"
+          depressed
+          small
+          @click="validate"
+        >
+          Download Brochure
+        </v-btn>
+
+      </v-form>
+    </v-card>
+  </v-container>
 </template>
 
 <script>
@@ -110,5 +112,7 @@ export default {
 </script>
 
 <style scoped>
-
+.contact {
+  max-width: 75vh;
+}
 </style>
