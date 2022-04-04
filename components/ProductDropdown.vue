@@ -9,7 +9,7 @@
     <template v-slot:activator="{ on, attrs }">
       <v-btn
         class="mr-3 hidden-sm-and-down font-weight-bold rounded-xl"
-        color="#148a5c"
+        color="orange"
         dark
         large
         v-bind="attrs"

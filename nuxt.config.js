@@ -38,7 +38,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['~/assets/main.css'],
 
   loading: {
     color: 'green',

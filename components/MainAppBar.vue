@@ -85,6 +85,7 @@
         <span>Home Page</span>
       </v-tooltip>
       <ContactInfo/>
+      <Documents />
       <v-spacer></v-spacer>
       <ProductDropdown />
       <v-btn class="font-weight-bold hidden-sm-and-down" color="#148a5c" text nuxt to="/latest-news">
@@ -92,10 +93,6 @@
         <v-icon class="ml-1">mdi-book-open-outline</v-icon>
       </v-btn>
       <InfoDropdown />
-      <v-btn class="mr-1 font-weight-bold hidden-sm-and-down sm12" color="#148a5c" text nuxt>
-        Documents
-        <v-icon class="ml-1">mdi-folder-open-outline</v-icon>
-      </v-btn>
     </v-app-bar>
   </div>
 </template>

@@ -17,7 +17,7 @@
                 class="mx-auto"
                 max-width="344"
               >
-                <v-img src="/team/hannalie.jpg"></v-img>
+                <v-img src="/team/hannalie.jpg" height="390"></v-img>
 
                 <v-card-title>
                   Hannalie Hayes
@@ -33,32 +33,31 @@
               </v-card>
             </v-col>
 
-            <!-- #Alison Niewoudt  -->
-
             <v-col
               cols="12"
               sm="4"
             >
               <v-card
-                class="mx-auto"
+                class="mx-auto rounded-br-xl"
                 max-width="344"
               >
-                <v-img src="/team/alison.jpg"></v-img>
+                <v-img src="/team/" height="390">Image Needed</v-img>
 
                 <v-card-title>
-                  Alison Niewoudt
+                  Carin Kock
                 </v-card-title>
 
                 <v-card-subtitle>
-                  Senior Accountant
+                  Financial Manager
                 </v-card-subtitle>
 
                 <v-card-subtitle>
-                  Contact: 056-515-3908 / <v-icon class="mb-1" small>mdi-phone</v-icon>
+                  Contact: Number Needed / <v-icon class="mb-1" small>mdi-cellphone</v-icon>
                 </v-card-subtitle>
 
               </v-card>
             </v-col>
+
             <v-col
               cols="12"
               sm="4"
@@ -67,7 +66,7 @@
                 class="mx-auto"
                 max-width="344"
               >
-                <v-img src="/team/martin.jpeg"></v-img>
+                <v-img src="/team/martin.jpeg" height="390"></v-img>
 
                 <v-card-title>
                   Martin van Deventer
@@ -91,7 +90,7 @@
                 class="mx-auto"
                 max-width="344"
               >
-                <v-img src="/team/kobie.jpg"></v-img>
+                <v-img src="/team/kobie.jpg" height="390"></v-img>
 
                 <v-card-title>
                   Kobie Burger
@@ -107,6 +106,7 @@
 
               </v-card>
             </v-col>
+
             <v-col
               cols="12"
               sm="4"
@@ -115,10 +115,35 @@
                 class="mx-auto"
                 max-width="344"
               >
-                <v-img src="/team/andrew.jpg"></v-img>
+                <v-img src="/team/david.jpg" height="390"></v-img>
 
                 <v-card-title>
-                  Andrew Vorster
+                  David Van Niekerk
+                </v-card-title>
+
+                <v-card-subtitle>
+                  Packaging & Shipping Manager
+                </v-card-subtitle>
+
+                <v-card-subtitle>
+                  Contact: 056-515-3908 / <v-icon class="mb-1" small>mdi-phone</v-icon>
+                </v-card-subtitle>
+
+              </v-card>
+            </v-col>
+
+            <v-col
+              cols="12"
+              sm="4"
+            >
+              <v-card
+                class="mx-auto"
+                max-width="344"
+              >
+                <v-img src="/team/george.jpg" height="390"></v-img>
+
+                <v-card-title>
+                  George Hayes
                 </v-card-title>
 
                 <v-card-subtitle>
@@ -126,11 +151,12 @@
                 </v-card-subtitle>
 
                 <v-card-subtitle>
-                  Contact: 071 869 0541 / <v-icon class="mb-1" small>mdi-cellphone</v-icon>
+                  Contact: 056-515-3908 / <v-icon class="mb-1" small>mdi-phone</v-icon>
                 </v-card-subtitle>
 
               </v-card>
             </v-col>
+
           </v-row>
         </v-container>
       </v-card>

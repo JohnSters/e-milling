@@ -199,11 +199,10 @@
                 <v-divider></v-divider>
                 <p class="pa-3 text-center">RDA = Recommended Dietary Allowance for individuals 13 years and older.</p>
                 <v-card-actions>
-                  <v-spacer></v-spacer>
                   <v-btn
                     color="darkgreen"
-                    text
                     @click="dialog = false"
+                    dark
                   >
                     Close
                   </v-btn>

@@ -10,7 +10,6 @@
         width="100%"
         class="midnight text-center"
         color="darkgreen"
-        dark
       >
         <v-card-text>
           <v-btn

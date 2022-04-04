@@ -48,9 +48,10 @@
             </div>
           </v-card>
         </v-container>
-        <v-card-actions class="justify-end">
+        <v-card-actions>
           <v-btn
-            text
+            color="darkgreen"
+            dark
             small
             class="rounded-xl"
             @click="dialog.value = false"

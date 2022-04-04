@@ -6,7 +6,7 @@
   <v-app dark>
     <MainAppBar />
     <v-main>
-      <Nuxt />
+        <Nuxt />
     </v-main>
 
     <FooterMain />
