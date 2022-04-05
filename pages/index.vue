@@ -10,8 +10,6 @@
       <div class="hidden-sm-and-down">
         Tel: 056-515-1309
         <v-icon class="mb-1" color="darkgreen" small>mdi-circle</v-icon>
-        Sales: 083-256-8151
-        <v-icon class="mb-1" color="darkgreen" small>mdi-circle</v-icon>
         email: pa@emilling.co.za
       </div>
       <v-spacer></v-spacer>
