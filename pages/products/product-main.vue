@@ -1,5 +1,7 @@
 <template>
   <v-container>
+    <h1>View our wide range of top quality products.</h1>
+    <v-divider class="ma-3"></v-divider>
     <v-row>
       <v-col
         v-for="(item, i) in items"
@@ -15,6 +17,7 @@
         </v-card>
       </v-col>
     </v-row>
+    <ProductCategory />
   </v-container>
 </template>
 
