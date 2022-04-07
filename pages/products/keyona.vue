@@ -34,7 +34,7 @@
                 </template>
               </v-data-table>
             </v-container>
-            <v-btn class="ma-6">Download Brochure</v-btn>
+            <v-btn class="ma-6" href="/downloads/Eendag Meule Brochure 2021.pdf" download>Download Brochure</v-btn>
             <v-dialog
               v-model="dialog"
               width="800"
@@ -138,7 +138,7 @@
                 </template>
               </v-data-table>
             </v-container>
-            <v-btn class="ml-3" small rounded>Download Brochure</v-btn>
+            <v-btn class="ml-3" href="/downloads/Eendag Meule Brochure 2021.pdf" download small rounded>Download Brochure</v-btn>
             <v-dialog
               v-model="dialog"
               width="800"
