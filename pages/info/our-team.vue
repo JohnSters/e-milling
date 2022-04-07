@@ -41,10 +41,10 @@
                 class="mx-auto rounded-br-xl"
                 max-width="344"
               >
-                <v-img src="/team/" height="390">Image Needed</v-img>
+                <v-img src="/team/karen.jpg" height="390"></v-img>
 
                 <v-card-title>
-                  Carin Kock
+                  Karen Kock
                 </v-card-title>
 
                 <v-card-subtitle>

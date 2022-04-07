@@ -68,7 +68,7 @@
     </div>
     <!-- END -->
     <br>
-    <ContactForm/>
+    <!-- <ContactForm/> -->
     <v-container>
       <v-divider class="ma-3"></v-divider>
       <h1 class="grey--text text--darken-2 text-center hidden-sm-and-down"><i>"Eendag Meule Bothaville (Pty) Ltd is

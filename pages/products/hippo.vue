@@ -15,7 +15,7 @@
               <h1 class="grey--text text--darken-2">Hippo Samp</h1>
               <v-divider class="mt-3 mb-3"></v-divider>
               <v-card class="ma-auto elevation-4" shaped color="blue" width="500" flat>
-                <v-img src="/products/hippo-samp.png" max-width="500"></v-img>
+                <v-img src="/products/hippo-samp-combo.jpg" max-width="500"></v-img>
               </v-card>
               <v-data-table
                 :custom-filter="filterOnlyCapsText"
@@ -119,7 +119,7 @@
               <h1 class="grey--text text--darken-2">Hippo Samp</h1>
               <v-divider class="mt-3 mb-3"></v-divider>
               <v-card class="ma-auto elevation-4" shaped color="blue" width="500" flat>
-                <v-img src="/products/hippo-samp.png" max-width="500"></v-img>
+                <v-img src="/products/hippo-samp-combo.jpg" max-width="500"></v-img>
               </v-card>
               <v-data-table
                 :custom-filter="filterOnlyCapsText"

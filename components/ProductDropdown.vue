@@ -15,6 +15,7 @@
         v-bind="attrs"
         :class="{active: menuValue}"
         v-on="on"
+        to="/products/product-main"
       >
         Product Range
         <v-icon>mdi-arrow-up</v-icon>
