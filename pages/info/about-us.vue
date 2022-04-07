@@ -1,7 +1,7 @@
 <template>
   <div>
     <template>
-      <v-parallax height="300" src="/office-inside.jpg"></v-parallax>
+      <v-parallax height="300" src="/entrance.jpg"></v-parallax>
     </template>
     <v-container class="about">
         <v-card

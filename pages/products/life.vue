@@ -407,11 +407,6 @@ export default {
         {
           text: 'Product Range',
           value: 'product_range',
-          filter: value => {
-            if (!this.calories) return true
-
-            return value < parseInt(this.calories)
-          },
         },
         {text: 'Barcode Single Unit', value: 'barcode'},
         {text: 'Barcode Baler', value: 'baler'},

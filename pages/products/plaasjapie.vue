@@ -16,7 +16,7 @@
             <v-card class="ma-auto" flat width="100%">
               <v-img src="/products/plaasjapie.png" width="100%"></v-img>
             </v-card>
-            <h3 class="mt-6 text-center">
+            <h3 class="mt-6 text-center grey--text text--darken-2">
               Our niche products that are available at selected stores such as e.g. road stalls
               Unique feature of our plaasjapie braaipap is that the design is changed
               regularly. The product is packed in a linen bag, that is often use
