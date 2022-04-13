@@ -14,9 +14,31 @@
             <v-container>
               <h1 class="grey--text text--darken-2">Keyona Superior - Special Maize Meal</h1>
               <v-divider class="mt-3 mb-3"></v-divider>
-              <v-card class="ma-auto elevation-4" shaped color="#e4dc44" width="500" flat>
-                <v-img src="/products/keyona-maize-combo.jpg" max-width="500"></v-img>
-              </v-card>
+              <!-- Product Combo Image for large screens with transition and placeholder for loading -->
+                <v-card class="ma-auto elevation-4" shaped width="500" flat>
+                  <v-img
+                    transition="fade-transition"
+                    src="/products/keyona-maize-combo.jpg"
+                    lazy-src="/products/keyona-maize-combo.jpg"
+                    aspect-ratio="1"
+                    class="grey lighten-2"
+                    max-width="500"
+                    max-height="400"
+                  >
+                    <template v-slot:placeholder>
+                      <v-row
+                        class="fill-height ma-0"
+                        align="center"
+                        justify="center"
+                      >
+                        <v-progress-circular
+                          indeterminate
+                          color="grey lighten-5"
+                        ></v-progress-circular>
+                      </v-row>
+                    </template>
+                  </v-img>
+                </v-card>
               <v-data-table
                 :custom-filter="filterOnlyCapsText"
                 :headers="headers"
@@ -118,9 +140,31 @@
             <v-container>
               <h1 class="grey--text text--darken-2">Keyona Superior - Special Maize Meal</h1>
               <v-divider class="mt-3 mb-3"></v-divider>
-              <v-card class="ma-auto elevation-4" shaped color="#e4dc44" width="500" flat>
-                <v-img src="/products/keyona-maize-combo.jpg" max-width="500"></v-img>
-              </v-card>
+              <!-- Product Combo Image for mobile with transition and placeholder for loading -->
+                <v-card class="ma-auto elevation-4" shaped width="500" flat>
+                  <v-img
+                    transition="fade-transition"
+                    src="/products/keyona-maize-combo.jpg"
+                    lazy-src="/products/keyona-maize-combo.jpg"
+                    aspect-ratio="1"
+                    class="grey lighten-2"
+                    max-width="500"
+                    max-height="400"
+                  >
+                    <template v-slot:placeholder>
+                      <v-row
+                        class="fill-height ma-0"
+                        align="center"
+                        justify="center"
+                      >
+                        <v-progress-circular
+                          indeterminate
+                          color="grey lighten-5"
+                        ></v-progress-circular>
+                      </v-row>
+                    </template>
+                  </v-img>
+                </v-card>
               <v-data-table
                 :custom-filter="filterOnlyCapsText"
                 :headers="headers"

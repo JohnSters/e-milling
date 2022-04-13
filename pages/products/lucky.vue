@@ -14,9 +14,32 @@
             <v-container>
               <h1 class="grey--text text--darken-2">Lucky Super Maize Meal</h1>
               <v-divider class="mt-3 mb-3"></v-divider>
-              <v-card class="ma-auto elevation-4" shaped color="darkgreen" width="500" flat>
-                <v-img src="/products/em-lucky-combo.jpg" max-width="500"></v-img>
+              <!-- Product Combo Image for large screens with transition and placeholder for loading -->
+              <v-card class="ma-auto elevation-4" flat shaped width="500">
+                <v-img
+                  aspect-ratio="1"
+                  class="grey lighten-2"
+                  lazy-src="/products/em-lucky-combo.jpg"
+                  max-height="350"
+                  max-width="500"
+                  src="/products/em-lucky-combo.jpg"
+                  transition="fade-transition"
+                >
+                  <template v-slot:placeholder>
+                    <v-row
+                      align="center"
+                      class="fill-height ma-0"
+                      justify="center"
+                    >
+                      <v-progress-circular
+                        color="grey lighten-5"
+                        indeterminate
+                      ></v-progress-circular>
+                    </v-row>
+                  </template>
+                </v-img>
               </v-card>
+
               <v-data-table
                 :custom-filter="filterOnlyCapsText"
                 :headers="headers"
@@ -34,7 +57,9 @@
                 </template>
               </v-data-table>
             </v-container>
-            <v-btn class="ma-6 hidden-sm-and-down" href="/downloads/Eendag Meule Brochure 2021.pdf" download>Download Brochure</v-btn>
+            <v-btn class="ma-6 hidden-sm-and-down" download href="/downloads/Eendag Meule Brochure 2021.pdf">Download
+              Brochure
+            </v-btn>
             <v-dialog
               v-model="dialog"
               width="800"
@@ -107,7 +132,7 @@
           </v-card>
         </v-row>
       </v-container>
-      <ProductCategory />
+      <ProductCategory/>
     </div>
 
     <!-- Mobile design viewport -->
@@ -119,9 +144,32 @@
             <v-container>
               <h3 class="grey--text text--darken-2">Lucky Super Maize Meal</h3>
               <v-divider class="mt-3 mb-3"></v-divider>
-              <v-card class="ma-auto elevation-4" shaped color="darkgreen" width="500" flat>
-                <v-img src="/products/em-lucky-combo.jpg" max-width="500"></v-img>
+              <!-- Product Combo Image for mobile with transition and placeholder for loading -->
+              <v-card class="ma-auto elevation-4" flat shaped width="500">
+                <v-img
+                  transition="fade-transition"
+                  src="/products/em-lucky-combo.jpg"
+                  lazy-src="/products/em-lucky-combo.jpg"
+                  aspect-ratio="1"
+                  class="grey lighten-2"
+                  max-height="350"
+                  max-width="500"
+                >
+                  <template v-slot:placeholder>
+                    <v-row
+                      align="center"
+                      class="fill-height ma-0"
+                      justify="center"
+                    >
+                      <v-progress-circular
+                        color="grey lighten-5"
+                        indeterminate
+                      ></v-progress-circular>
+                    </v-row>
+                  </template>
+                </v-img>
               </v-card>
+
               <v-data-table
                 :custom-filter="filterOnlyCapsText"
                 :headers="headers"
@@ -139,7 +187,9 @@
                 </template>
               </v-data-table>
             </v-container>
-            <v-btn class="ml-3" href="/downloads/Eendag Meule Brochure 2021.pdf" download small rounded>Download Brochure</v-btn>
+            <v-btn class="ml-3" download href="/downloads/Eendag Meule Brochure 2021.pdf" rounded small>Download
+              Brochure
+            </v-btn>
             <v-dialog
               v-model="dialog"
               width="800"
@@ -149,8 +199,8 @@
                   class="ml-3 mt-2"
                   color="darkgreen"
                   dark
-                  small
                   rounded
+                  small
                   v-bind="attrs"
                   v-on="on"
                 >
@@ -201,19 +251,19 @@
                 <v-card-actions>
                   <v-btn
                     color="darkgreen"
-                    @click="dialog = false"
                     dark
+                    @click="dialog = false"
                   >
                     Close
                   </v-btn>
                 </v-card-actions>
               </v-card>
             </v-dialog>
-            <v-btn class="ml-3 mt-2 mb-3" small rounded>Download Nutritional Information</v-btn>
+            <v-btn class="ml-3 mt-2 mb-3" rounded small>Download Nutritional Information</v-btn>
           </v-card>
         </v-row>
       </v-container>
-      <ProductCategory />
+      <ProductCategory/>
     </div>
 
   </div>

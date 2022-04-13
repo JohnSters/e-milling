@@ -14,9 +14,30 @@
             <v-container>
               <h1 class="grey--text text--darken-2">Hippo Samp</h1>
               <v-divider class="mt-3 mb-3"></v-divider>
-              <v-card class="ma-auto elevation-4" shaped color="blue" width="500" flat>
-                <v-img src="/products/hippo-samp-combo.jpg" max-width="500"></v-img>
-              </v-card>
+                <v-card class="ma-auto elevation-4" shaped width="500" flat>
+                  <v-img
+                    transition="fade-transition"
+                    src="/products/hippo-samp-combo.jpg"
+                    lazy-src="/products/hippo-samp-combo.jpg"
+                    aspect-ratio="1"
+                    class="grey lighten-2"
+                    max-width="500"
+                    max-height="350"
+                  >
+                    <template v-slot:placeholder>
+                      <v-row
+                        class="fill-height ma-0"
+                        align="center"
+                        justify="center"
+                      >
+                        <v-progress-circular
+                          indeterminate
+                          color="grey lighten-5"
+                        ></v-progress-circular>
+                      </v-row>
+                    </template>
+                  </v-img>
+                </v-card>
               <v-data-table
                 :custom-filter="filterOnlyCapsText"
                 :headers="headers"
@@ -118,8 +139,29 @@
             <v-container>
               <h1 class="grey--text text--darken-2">Hippo Samp</h1>
               <v-divider class="mt-3 mb-3"></v-divider>
-              <v-card class="ma-auto elevation-4" shaped color="blue" width="500" flat>
-                <v-img src="/products/hippo-samp-combo.jpg" max-width="500"></v-img>
+              <v-card class="ma-auto elevation-4" shaped width="500" flat>
+                <v-img
+                  transition="fade-transition"
+                  src="/products/hippo-samp-combo.jpg"
+                  lazy-src="/products/hippo-samp-combo.jpg"
+                  aspect-ratio="1"
+                  class="grey lighten-2"
+                  max-width="500"
+                  max-height="350"
+                >
+                  <template v-slot:placeholder>
+                    <v-row
+                      class="fill-height ma-0"
+                      align="center"
+                      justify="center"
+                    >
+                      <v-progress-circular
+                        indeterminate
+                        color="grey lighten-5"
+                      ></v-progress-circular>
+                    </v-row>
+                  </template>
+                </v-img>
               </v-card>
               <v-data-table
                 :custom-filter="filterOnlyCapsText"
