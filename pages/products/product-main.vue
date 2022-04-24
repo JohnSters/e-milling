@@ -9,11 +9,11 @@
         cols="12"
         sm="3"
       >
-        <v-card class="pa-4" width="300" link :to="item.link">
-          <h3>{{ item.title }}</h3>
-          <v-img :src="item.img" width="300" contain></v-img>
+        <v-card class="pa-4" width="300" height="460" link :to="item.link">
+          <h3 class="text-center grey--text text--darken-2 mb-2">{{ item.title }}</h3>
+          <v-img :src="item.img" :lazy-src="item.img" width="300" contain></v-img>
           <v-divider class="ma-3"></v-divider>
-          <h4 class="text-center">{{ item.description }}</h4>
+          <h4 class="text-center grey--text text--darken-2">{{ item.description }}</h4>
         </v-card>
       </v-col>
     </v-row>
