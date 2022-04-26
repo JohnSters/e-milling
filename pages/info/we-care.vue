@@ -6,11 +6,11 @@
     <v-container class="care">
     <v-card elevation="6" shaped>
       <v-container>
-        <h1>We Care About Our Communities</h1>
+        <h1 class="grey--text text--darken-2">We Care About Our Communities</h1>
         <v-divider class="mt-2 mb-2"></v-divider>
-        <p>Where possible, we support small enterprises by providing them with competitive pricing. We assist various schools and feeding schemes in order to provide for our children and our future. We support different welfare organisations with monthly maize meal donations in order to help feed the less fortunate.</p>
-        <p>We care about a fit and healthy community. Recently we became the proud sponsor of Bothaville Marathon-club.</p>
-        <p>We strive to appoint the best qualified personnel for every position within the company. We aim to uplift currently employed personnel through training and skills development.  Our current workforce is approximately 118 employees. </p>
+        <p class="grey--text text--darken-2">Where possible, we support small enterprises by providing them with competitive pricing. We assist various schools and feeding schemes in order to provide for our children and our future. We support different welfare organisations with monthly maize meal donations in order to help feed the less fortunate.</p>
+        <p class="grey--text text--darken-2">We care about a fit and healthy community. Recently we became the proud sponsor of Bothaville Marathon-club.</p>
+        <p class="grey--text text--darken-2">We strive to appoint the best qualified personnel for every position within the company. We aim to uplift currently employed personnel through training and skills development.  Our current workforce is approximately 118 employees. </p>
         <v-row>
           <v-col
             cols="12"

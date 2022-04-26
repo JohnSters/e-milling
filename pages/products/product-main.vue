@@ -1,7 +1,8 @@
 <template>
   <v-container>
-    <h1>View our wide range of top quality products.</h1>
-    <v-divider class="ma-3"></v-divider>
+    <h1 class="grey--text text--darken-2">View our wide range of top quality products.</h1>
+    <v-divider class="ma-3 mb-6"></v-divider>
+
     <v-row>
       <v-col
         v-for="(item, i) in items"
@@ -9,12 +10,23 @@
         cols="12"
         sm="3"
       >
-        <v-card class="pa-4" width="300" height="460" link :to="item.link">
-          <h3 class="text-center grey--text text--darken-2 mb-2">{{ item.title }}</h3>
-          <v-img :src="item.img" :lazy-src="item.img" width="300" contain></v-img>
-          <v-divider class="ma-3"></v-divider>
-          <h4 class="text-center grey--text text--darken-2">{{ item.description }}</h4>
-        </v-card>
+        <v-hover v-slot="{ hover }" >
+          <v-card
+            :elevation="hover ? 2 : 4"
+            :class="{ 'on-hover': hover }"
+            shaped
+            class="pa-4"
+            width="300"
+            height="460"
+            link
+            :to="item.link">
+            <h3 class="text-center grey--text text--darken-2 mb-2">{{ item.title }}</h3>
+            <v-img :src="item.img" :lazy-src="item.img" width="300" contain></v-img>
+            <v-divider class="ma-3"></v-divider>
+            <h4 class="text-center grey--text text--darken-2">{{ item.description }}</h4>
+          </v-card>
+        </v-hover>
+
       </v-col>
     </v-row>
     <ProductCategory />

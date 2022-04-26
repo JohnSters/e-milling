@@ -43,12 +43,12 @@ export default {
       attendants: [
         {
           app: 'whatsapp',
-          label: 'Sales',
-          name: 'Belinda Botha',
-          number: '+27832568151',
+          label: 'Marketing Manager',
+          name: 'Kobie Burger',
+          number: '+27843109678',
           avatar: {
-            src: '/Belinda Botha.jpg',
-            alt: 'Sales'
+            src: '/team/kobie.jpg',
+            alt: 'Marketing Manager'
           }
         },
         // ...

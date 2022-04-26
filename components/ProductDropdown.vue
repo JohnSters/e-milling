@@ -2,9 +2,8 @@
   <v-menu
     v-model="menuValue"
     content-class="mt-2 elevation-3 rounded-xl"
+    transition="fade-transition"
     offset-y
-    open-on-hover
-    close-delay="800"
   >
     <template v-slot:activator="{ on, attrs }">
       <v-btn

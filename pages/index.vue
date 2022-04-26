@@ -53,27 +53,14 @@
     <v-toolbar color="#148a5c" flat></v-toolbar>
     <!-- This is the home page products tab. This page have several component imports for the different products (niche, maize, feeds.) -->
     <ProductCategory/>
-    <div class="mt-6 mb-6 text-center hidden-sm-and-down">
-      <v-btn depressed nuxt to="/products/product-main">Products Page</v-btn>
-      -
-      <v-btn href="/downloads/Eendag Meule Brochure 2021.pdf" download depressed>Download Brochure
-        <v-icon class="ml-1">mdi-download</v-icon>
-      </v-btn>
-    </div>
-    <div class="mt-2 ml-6 hidden-md-and-up">
-      <v-btn depressed rounded small>Products Page</v-btn>
-      <v-btn class="mt-2" depressed rounded small>Download Brochure
-        <v-icon class="ml-1">mdi-download</v-icon>
-      </v-btn>
-    </div>
     <!-- END -->
-    <br>
+
     <!-- <ContactForm/> -->
     <v-container>
       <v-divider class="ma-3"></v-divider>
-      <h1 class="grey--text text--darken-2 text-center hidden-sm-and-down"><i>"Eendag Meule Bothaville (Pty) Ltd is
+      <h2 class="grey--text text--darken-2 font-weight-light text-center hidden-sm-and-down"><i>"Eendag Meule Bothaville (Pty) Ltd is
         driven by customer satisfaction and we strive to keep customer relations strong by supplying the best range of
-        quality products at competitive prices."</i></h1>
+        quality products at competitive prices."</i></h2>
       <h4 class="grey--text text--darken-2 text-center hidden-md-and-up"><i>"Eendag Meule Bothaville (Pty) Ltd is driven
         by customer satisfaction and we strive to keep customer relations strong by supplying the best range of quality
         products at competitive prices."</i></h4>
@@ -97,7 +84,7 @@ export default {
       },
       {
         src: '/factory-inside.jpg',
-        msg: 'Eendag Meule recently installed a Westweigh Systems; fully automatic - Premiertech (Chronos bag) placing system. This makes us the first mill in South Africa to install such a bagging system.'
+        msg: 'Eendag meule packaging department is running with 4 automatic robot bag placing systems, with a waterproof wrapping system'
       },
       {
         src: '/office-inside.jpg',

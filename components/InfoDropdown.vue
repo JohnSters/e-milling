@@ -44,7 +44,7 @@
         <v-icon class="mr-2">mdi-package-variant-closed</v-icon>
         <v-list-item-title>Packing Excellence</v-list-item-title>
       </v-list-item>
-      <v-list-item nuxt>
+      <v-list-item to="/info/vacancies" nuxt>
         <v-icon class="mr-2">mdi-account-hard-hat</v-icon>
         <v-list-item-title>Vacancies / Jobs</v-list-item-title>
       </v-list-item>

@@ -57,7 +57,7 @@
                 </template>
               </v-data-table>
             </v-container>
-            <v-btn class="ma-6 hidden-sm-and-down" download href="/downloads/Eendag Meule Brochure 2021.pdf">Download
+            <v-btn href="/downloads/eendag-meule-broshure.pdf" download="" class="ma-6 hidden-sm-and-down">Download
               Brochure
             </v-btn>
             <v-dialog
@@ -128,7 +128,7 @@
                 </v-card-actions>
               </v-card>
             </v-dialog>
-            <v-btn class="ml-6 hidden-sm-and-down">Download Nutritional Information</v-btn>
+            <v-btn href="/downloads/nutritional-values.docx" download="" class="ml-6 hidden-sm-and-down">Download Nutritional Information</v-btn>
           </v-card>
         </v-row>
       </v-container>
@@ -187,7 +187,7 @@
                 </template>
               </v-data-table>
             </v-container>
-            <v-btn class="ml-3" download href="/downloads/Eendag Meule Brochure 2021.pdf" rounded small>Download
+            <v-btn href="/downloads/eendag-meule-broshure.pdf" download="" class="ml-3" rounded small>Download
               Brochure
             </v-btn>
             <v-dialog
@@ -259,7 +259,7 @@
                 </v-card-actions>
               </v-card>
             </v-dialog>
-            <v-btn class="ml-3 mt-2 mb-3" rounded small>Download Nutritional Information</v-btn>
+            <v-btn href="/downloads/nutritional-values.docx" download="" class="ml-3 mt-2 mb-3" rounded small>Download Nutritional Information</v-btn>
           </v-card>
         </v-row>
       </v-container>

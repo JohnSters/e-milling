@@ -8,7 +8,7 @@
         >
           <p class="text-center">Lucky Super Maize Meal</p>
           <v-card class="pa-4" :elevation="hover ? 4 : 2" link to="/products/lucky">
-            <v-img src="/products/em-lucky.jpg" height="360"></v-img>
+            <v-img src="/products/em-lucky/em-lucky-50kg.jpg" contain height="360"></v-img>
           </v-card>
         </v-col>
       </v-hover>
@@ -19,7 +19,7 @@
         >
           <p class="text-center">Hippo Samp</p>
           <v-card class="pa-4" :elevation="hover ? 4 : 2" link to="/products/hippo">
-            <v-img src="/products/hippo-samp.jpg" height="360"></v-img>
+            <v-img src="/products/hippo/hippo-25kg.jpg" contain height="360"></v-img>
           </v-card>
         </v-col>
       </v-hover>
@@ -31,7 +31,7 @@
         >
           <p class="text-center">Keyona Superior Maize Meal</p>
           <v-card class="pa-4" :elevation="hover ? 4 : 2" link to="/products/keyona">
-            <v-img src="/products/keyona-superior.jpg" height="360"></v-img>
+            <v-img src="/products/keyona/keyona-50kg.jpg" contain height="360"></v-img>
           </v-card>
         </v-col>
       </v-hover>
@@ -42,7 +42,7 @@
         >
           <p class="text-center">Life Super Maize Meal</p>
           <v-card class="pa-4" :elevation="hover ? 4 : 2" link to="/products/life">
-            <v-img src="/products/super-life-maize.jpg" height="360"></v-img>
+            <v-img src="/products/super-life/super-life-50kg.jpg" contain height="360"></v-img>
           </v-card>
         </v-col>
       </v-hover>

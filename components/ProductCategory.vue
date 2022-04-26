@@ -31,6 +31,20 @@
       <!-- END -->
 
     </v-tabs>
+
+    <div class="mt-6 mb-6 text-center hidden-sm-and-down">
+      <v-btn class="orange" dark nuxt to="/products/product-main">Product List</v-btn>
+      -
+      <v-btn href="/downloads/eendag-meule-broshure.pdf" download="" depressed>Download Brochure
+        <v-icon class="ml-1">mdi-download</v-icon>
+      </v-btn>
+    </div>
+    <div class="mt-2 ml-6 hidden-md-and-up">
+      <v-btn depressed rounded small>Products Page</v-btn>
+      <v-btn href="/downloads/eendag-meule-broshure.pdf" download="" class="mt-2" depressed rounded small>Download Brochure
+        <v-icon class="ml-1">mdi-download</v-icon>
+      </v-btn>
+    </div>
   </v-container>
 </template>
 

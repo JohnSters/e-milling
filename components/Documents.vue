@@ -23,29 +23,29 @@
     <v-list color="#148a5c" dark>
       <h3 class="ml-5">Admin</h3>
       <v-divider class="ma-3"></v-divider>
-      <v-list-item nuxt to="/info/about-us">
+      <v-list-item href="/downloads/EENDAG MEULE Credit Application Form Updated 2021.pdf" download="">
         <v-icon class="mr-2">mdi-download</v-icon>
         <v-list-item-title>EENDAG MEULE Credit Application Form.pdf</v-list-item-title>
       </v-list-item>
-      <v-list-item nuxt to="/info/company-profile">
+      <v-list-item href="/downloads/DS Generic Credit Policy and SLA Eendagmeule Draft1.pdf" download="">
         <v-icon class="mr-2">mdi-download</v-icon>
         <v-list-item-title>DS Generic Credit Policy and SLA Eendagmeule Draft1.pdf</v-list-item-title>
       </v-list-item>
-      <v-list-item nuxt to="/info/our-team">
+      <v-list-item  href="/downloads/Kontantaansoek 2018.pdf" download="">
         <v-icon class="mr-2">mdi-download</v-icon>
         <v-list-item-title>Kontantaansoek 2018.pdf</v-list-item-title>
       </v-list-item>
       <h3 class="ml-5 mt-5">Certification</h3>
       <v-divider class="ma-3"></v-divider>
-      <v-list-item nuxt to="/info/we-care">
+      <v-list-item href="/downloads/Halaal.jpg" download="">
         <v-icon class="mr-2">mdi-download</v-icon>
         <v-list-item-title>Halaal</v-list-item-title>
       </v-list-item>
-      <v-list-item nuxt to="/info/green-power">
+      <v-list-item href="/downloads/foodSafety.pdf" download="">
         <v-icon class="mr-2">mdi-download</v-icon>
         <v-list-item-title>Food Safety.pdf</v-list-item-title>
       </v-list-item>
-      <v-list-item nuxt>
+      <v-list-item href="/downloads/HACCP - Certificate of Compliance Valid Until 24.10.2019.pdf" download="">
         <v-icon class="mr-2">mdi-download</v-icon>
         <v-list-item-title>HACCP.pdf</v-list-item-title>
       </v-list-item>
