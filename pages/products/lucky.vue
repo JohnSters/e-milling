@@ -13,6 +13,7 @@
           >
             <v-container>
               <h1 class="grey--text text--darken-2">Lucky Super Maize Meal</h1>
+              <v-btn to="product-main" class="blue--text" text>Back to Product Page</v-btn>
               <v-divider class="mt-3 mb-3"></v-divider>
               <!-- Product Combo Image for large screens with transition and placeholder for loading -->
               <v-card class="ma-auto elevation-4" flat shaped width="500">

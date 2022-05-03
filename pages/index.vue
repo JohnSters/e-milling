@@ -4,10 +4,10 @@
    -->
   <div>
     <v-toolbar color="" flat height="78">
-      <v-img class="hidden-sm-and-down" max-width="240" src="/logo.png"></v-img>
+      <v-img src="/logo-black.jpg" class="hidden-sm-and-down" max-width="120" contain></v-img>
       <v-img class="ml-6 mt-6 hidden-md-and-up" max-width="240" src="/logo.png"></v-img>
-      <v-spacer></v-spacer>
-      <div class="hidden-sm-and-down">
+      <v-spacer class="mr-12"></v-spacer>
+      <div class="hidden-sm-and-down ml-16">
         Tel: 056-515-1309
         <v-icon class="mb-1" color="darkgreen" small>mdi-circle</v-icon>
         email: pa@emilling.co.za
@@ -31,11 +31,13 @@
           class="fill-height"
           justify="center"
         >
-          <v-card class="intro-text ma-6 pa-6 rounded-xl" dark>
-            <h1><i>"{{ item.msg }}"</i></h1>
+          <v-card class="intro-text ma-6 mt-16 pa-6 rounded-xl" dark>
+            <h2><i>"{{ item.msg }}"</i></h2>
           </v-card>
         </v-row>
       </v-carousel-item>
+      <!--   Logo attached to carousel   -->
+      <v-img src="/logo.jpg" class="rounded-tl-circle rounded-tr-circle rounded-bl-xl rounded-br-xl elevation-12 mt-1 ma-auto" max-width="400" max-height="225"></v-img>
     </v-carousel>
     <v-card class="ma-4 pa-2 text-center hidden-md-and-up" flat>
       <v-btn class="hidden-md-and-up ml-2" color="blue" rounded small dark>Find us on facebook

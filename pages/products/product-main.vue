@@ -1,33 +1,116 @@
 <template>
   <v-container>
-    <h1 class="grey--text text--darken-2">View our wide range of top quality products.</h1>
+    <h1 class="grey--text text--darken-2 text-center">View our wide range of top quality products.</h1>
     <v-divider class="ma-3 mb-6"></v-divider>
 
     <v-row>
       <v-col
-        v-for="(item, i) in items"
-        :key="i"
         cols="12"
-        sm="3"
+        sm="6"
       >
-        <v-hover v-slot="{ hover }" >
-          <v-card
-            :elevation="hover ? 2 : 4"
-            :class="{ 'on-hover': hover }"
-            shaped
-            class="pa-4"
-            width="300"
-            height="460"
-            link
-            :to="item.link">
-            <h3 class="text-center grey--text text--darken-2 mb-2">{{ item.title }}</h3>
-            <v-img :src="item.img" :lazy-src="item.img" width="300" contain></v-img>
-            <v-divider class="ma-3"></v-divider>
-            <h4 class="text-center grey--text text--darken-2">{{ item.description }}</h4>
-          </v-card>
-        </v-hover>
-
+        <h3 class="grey--text darken-2 text-center mb-2">Lucky Super Maize Meal</h3>
+        <v-card class="green pa-2 rounded-tl-circle rounded-tr-circle elevation-4" link to="lucky">
+          <v-img src="em-lucky-combo.jpg"></v-img>
+        </v-card>
       </v-col>
+      <v-col
+        cols="12"
+        sm="6"
+      >
+        <h3 class="grey--text darken-2 text-center mb-2">Super Life Maize Meal</h3>
+        <v-card class="red pa-2 rounded-tr-circle rounded-tl-circle elevation-4" link to="life">
+          <v-img src="life-maize-combo.jpg" height="406"></v-img>
+        </v-card>
+      </v-col>
+      <v-col
+        cols="12"
+        sm="6"
+      >
+        <v-card class="yellow pa-2 rounded-0" flat link to="keyona">
+          <v-img src="keyona-maize-combo.jpg" height="388"></v-img>
+        </v-card>
+        <h3 class="grey--text darken-2 text-center mt-2">Keyona Superior Maize Meal</h3>
+      </v-col>
+      <v-col
+        cols="12"
+        sm="6"
+      >
+        <v-card class="blue pa-2 rounded-0" flat link to="hippo">
+          <v-img src="hippo-samp-combo.jpg"></v-img>
+        </v-card>
+        <h3 class="grey--text darken-2 text-center mt-2">Hippo Samp</h3>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-hover v-slot="{ hover }">
+        <v-col
+          cols="12"
+          md="3"
+        >
+          <p class="text-center">Plaasjapie Growwe Braaipap</p>
+          <v-card class="pa-4" :elevation="hover ? 4 : 2" link>
+            <v-img src="/products/niche1.png" height="360"></v-img>
+          </v-card>
+        </v-col>
+      </v-hover>
+      <v-hover v-slot="{ hover }">
+        <v-col
+          cols="12"
+          md="3"
+        >
+          <p class="text-center">Plaasjapie Bittergrowwe Braaipap</p>
+          <v-card class="pa-4" :elevation="hover ? 4 : 2" link>
+            <v-img src="/products/niche2.png" height="360"></v-img>
+          </v-card>
+        </v-col>
+      </v-hover>
+
+      <v-hover v-slot="{ hover }">
+        <v-col
+          cols="12"
+          md="3"
+        >
+          <p class="text-center">Plaasjapie Semelverrykte Braaipap</p>
+          <v-card class="pa-4" :elevation="hover ? 4 : 2" link>
+            <v-img src="/products/niche3.png" height="360"></v-img>
+          </v-card>
+        </v-col>
+      </v-hover>
+      <v-hover v-slot="{ hover }">
+        <v-col
+          cols="12"
+          md="3"
+        >
+          <p class="text-center">Plaasjapie Growwe Geelmeel</p>
+          <v-card class="pa-4" :elevation="hover ? 4 : 2" link>
+            <v-img src="/products/niche4.png" height="360"></v-img>
+          </v-card>
+        </v-col>
+      </v-hover>
+    </v-row>
+    <v-row>
+      <v-hover v-slot="{ hover }">
+        <v-col
+          cols="12"
+          md="3"
+        >
+          <p class="text-center">Eendag Yellow Maize</p>
+          <v-card class="pa-4" :elevation="hover ? 4 : 2" link>
+            <v-img src="/products/yellow.jpg" height="360"></v-img>
+          </v-card>
+        </v-col>
+      </v-hover>
+      <v-hover v-slot="{ hover }">
+        <v-col
+          cols="12"
+          md="3"
+        >
+          <p class="text-center">Chick a-Licious</p>
+          <v-card class="pa-4" :elevation="hover ? 4 : 2" link>
+            <v-img src="/products/chick.jpg" height="360"></v-img>
+          </v-card>
+        </v-col>
+      </v-hover>
     </v-row>
     <ProductCategory />
   </v-container>

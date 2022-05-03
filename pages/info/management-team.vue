@@ -34,14 +34,14 @@
         shaped
         max-width="300"
       >
-        <v-img src="/team/karen.jpg" height="350"></v-img>
+        <v-img src="/team/alison.jpeg" height="350"></v-img>
 
         <v-card-title>
-          Karen Kock
+          Alison Niewoudt
         </v-card-title>
 
         <v-card-subtitle>
-          Financial Manager
+          Senior Accountant
         </v-card-subtitle>
 
         <v-card-subtitle>

@@ -87,12 +87,12 @@
       <ContactInfo/>
       <Documents />
       <v-spacer></v-spacer>
+      <InfoDropdown />
       <ProductDropdown />
       <v-btn class="font-weight-bold hidden-sm-and-down" color="#148a5c" text nuxt to="/latest-news">
         Latest News
         <v-icon class="ml-1">mdi-book-open-outline</v-icon>
       </v-btn>
-      <InfoDropdown />
     </v-app-bar>
   </div>
 </template>
