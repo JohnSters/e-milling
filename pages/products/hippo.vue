@@ -13,6 +13,7 @@
           >
             <v-container>
               <h1 class="grey--text text--darken-2">Hippo Samp</h1>
+              <v-btn to="product-main" class="blue--text" text>Back to Product Page</v-btn>
               <v-divider class="mt-3 mb-3"></v-divider>
                 <v-card class="ma-auto elevation-4" shaped width="500" flat>
                   <v-img
@@ -138,7 +139,6 @@
           <v-card flat tile>
             <v-container>
               <h1 class="grey--text text--darken-2">Hippo Samp</h1>
-              <v-btn to="product-main" class="blue--text" text>Back to Product Page</v-btn>
               <v-divider class="mt-3 mb-3"></v-divider>
               <v-card class="ma-auto elevation-4" shaped width="500" flat>
                 <v-img

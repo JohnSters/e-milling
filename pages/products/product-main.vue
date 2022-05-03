@@ -41,6 +41,10 @@
         <h3 class="grey--text darken-2 text-center mt-2">Hippo Samp</h3>
       </v-col>
     </v-row>
+
+    <v-divider class="ma-3"></v-divider>
+    <h1 class="text-center grey--text text--darken-2 font-weight-light">Looking for something special?</h1>
+    <h4 class="text-center green--text text--darken-2 mb-3">Tel: <b class="orange--text">056-515-1309</b> to find out more!</h4>
     <v-row>
       <v-hover v-slot="{ hover }">
         <v-col
