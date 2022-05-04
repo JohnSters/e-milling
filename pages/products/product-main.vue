@@ -10,7 +10,7 @@
       >
         <h3 class="grey--text darken-2 text-center mb-2">Lucky Super Maize Meal</h3>
         <v-card class="green pa-2 rounded-tl-circle rounded-tr-circle elevation-4" link to="lucky">
-          <v-img src="em-lucky-combo.jpg"></v-img>
+          <v-img src="em-lucky-combo.jpg" height="406"></v-img>
         </v-card>
       </v-col>
       <v-col

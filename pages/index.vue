@@ -12,7 +12,7 @@
         email: pa@emilling.co.za
       </div>
       <v-spacer></v-spacer>
-      <v-btn class="hidden-sm-and-down" color="blue" dark>Find us on facebook
+      <v-btn class="hidden-sm-and-down" color="blue" dark href="https://www.facebook.com/EMillingBHV/" target="_blank">Find us on facebook
         <v-icon class="ml-2">mdi-facebook</v-icon>
       </v-btn>
     </v-toolbar>
@@ -42,7 +42,7 @@
     </v-carousel>
     <v-img src="/logo.jpg" class="hidden-md-and-up"></v-img>
     <v-card class="ma-4 pa-2 text-center hidden-md-and-up" flat>
-      <v-btn class="hidden-md-and-up ml-2" color="blue" rounded small dark>Find us on facebook
+      <v-btn class="hidden-md-and-up ml-2" color="blue" rounded small dark href="https://www.facebook.com/EMillingBHV/" target="_blank">Find us on facebook
         <v-icon>mdi-facebook</v-icon>
       </v-btn>
     </v-card>

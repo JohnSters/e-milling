@@ -156,58 +156,6 @@
       </v-card>
     </v-col>
 
-    <v-col
-      cols="12"
-      sm="4"
-    >
-      <v-card
-        class="mx-auto"
-        max-width="300"
-        shaped
-      >
-        <v-img src="" height="350">Photo Needed</v-img>
-
-        <v-card-title>
-          Jonas Setlau
-        </v-card-title>
-
-        <v-card-subtitle>
-          TBA
-        </v-card-subtitle>
-
-        <v-card-subtitle>
-          Contact: TBA / <v-icon class="mb-1" small>mdi-cellphone</v-icon>
-        </v-card-subtitle>
-
-      </v-card>
-    </v-col>
-
-    <v-col
-      cols="12"
-      sm="4"
-    >
-      <v-card
-        class="mx-auto"
-        max-width="300"
-        shaped
-      >
-        <v-img src="" height="350">Photo Needed</v-img>
-
-        <v-card-title>
-          Adriaan van der Merwe
-        </v-card-title>
-
-        <v-card-subtitle>
-          TBA
-        </v-card-subtitle>
-
-        <v-card-subtitle>
-          Contact: TBA / <v-icon class="mb-1" small>mdi-cellphone</v-icon>
-        </v-card-subtitle>
-
-      </v-card>
-    </v-col>
-
   </v-row>
 </template>
 
