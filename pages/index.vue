@@ -3,10 +3,10 @@
        This page is injected into the default page and displays where the <Nuxt /> tag is placed.
    -->
   <div>
-    <v-toolbar color="" flat height="78">
+    <v-toolbar height="78" flat>
       <v-img src="/logo-black.jpg" class="hidden-sm-and-down" max-width="120" contain></v-img>
       <v-img class="ml-6 mt-6 hidden-md-and-up" max-width="240" src="/logo.png"></v-img>
-      <v-spacer class="mr-12"></v-spacer>
+      <v-spacer class="mr-15"></v-spacer>
       <div class="hidden-sm-and-down ml-16">
         Tel: 056-515-1309
         <v-icon class="mb-1" color="darkgreen" small>mdi-circle</v-icon>
@@ -26,6 +26,9 @@
         reverse-transition="fade-transition"
         transition="fade-transition"
       >
+        <v-card max-width="300" class="ma-auto rounded-0 mt-n3 pa-3">
+          <v-img src="/logo.jpg" class="yellow ma-auto" max-width="300" max-height="150"></v-img>
+        </v-card>
         <v-row
           align="center"
           class="fill-height"
@@ -37,7 +40,6 @@
         </v-row>
       </v-carousel-item>
       <!--   Logo attached to carousel   -->
-      <v-img src="/logo.jpg" class="rounded-tl-circle rounded-tr-circle rounded-bl-xl rounded-br-xl elevation-12 mt-1 ma-auto" max-width="400" max-height="225"></v-img>
     </v-carousel>
     <v-card class="ma-4 pa-2 text-center hidden-md-and-up" flat>
       <v-btn class="hidden-md-and-up ml-2" color="blue" rounded small dark>Find us on facebook
