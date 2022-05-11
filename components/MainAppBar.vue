@@ -54,6 +54,7 @@
             <v-list-item
               v-for="(sublink) in link.subLinks"
               :to="sublink.to"
+              :href="sublink.href"
               :key="sublink.text"
             >
               <v-list-item-icon>
@@ -189,7 +190,7 @@ export default {
             },
             {
               text : 'Vacancies / Jobs',
-              to    : '#',
+              to    : '/info/vacancies',
               icon  : 'mdi-plus'
             },
             {
@@ -200,9 +201,40 @@ export default {
           ]
         },
         {
-          to     : '/documents',
-          icon   : 'mdi-newspaper-variant',
-          text   : 'Documents',
+          icon     : 'mdi-book',
+          text     : 'Documents',
+          subLinks : [
+            {
+              text : 'EENDAG MEULE Credit Application Form.pdf',
+              href    : '/downloads/EENDAG MEULE Credit Application Form Updated 2021.pdf',
+              icon  : 'mdi-download'
+            },
+            {
+              text : 'DS Generic Credit Policy and SLA Eendagmeule Draft1.pdf',
+              to    : '/downloads/DS Generic Credit Policy and SLA Eendagmeule Draft1.pdf',
+              icon  : 'mdi-download'
+            },
+            {
+              text : 'Kontantaansoek 2018.pdf',
+              to    : '/downloads/Kontantaansoek 2018.pdf',
+              icon  : 'mdi-download'
+            },
+            {
+              text : 'Halaal',
+              to    : '/downloads/Halaal.jpg',
+              icon  : 'mdi-download'
+            },
+            {
+              text : 'Food Safety.pdf',
+              to    : '/downloads/foodSafety.pdf',
+              icon  : 'mdi-download'
+            },
+            {
+              text : 'HACCP.pdf',
+              to    : '/downloads/HACCP - Certificate of Compliance Valid Until 24.10.2019.pdf',
+              icon  : 'mdi-download'
+            },
+          ]
         },
       ],
       miniVariant: false,
