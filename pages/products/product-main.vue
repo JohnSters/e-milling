@@ -68,7 +68,7 @@
         class="hidden-md-and-up"
       >
         <h3 class="grey--text darken-2 text-center mt-2">Keyona Superior Maize Meal</h3>
-        <v-card class="yellow pa-2 rounded-0" flat link to="keyona">
+        <v-card class="yellow pa-1 rounded-0" flat link to="keyona">
           <v-img src="keyona-maize-combo.jpg" lazy-src="keyona-maize-combo.jpg" contain></v-img>
         </v-card>
       </v-col>
@@ -79,7 +79,7 @@
         sm="6"
         class="hidden-sm-and-down"
       >
-        <v-card class="blue pa-2 rounded-0 elevation-1" height="405" flat link to="hippo">
+        <v-card class="blue pa-1 rounded-0 elevation-1" height="405" flat link to="hippo">
           <v-img src="hippo-samp-combo.jpg" lazy-src="hippo-samp-combo.jpg" height="388" ></v-img>
         </v-card>
         <h3 class="grey--text darken-2 text-center mt-2">Hippo Samp</h3>
@@ -91,7 +91,7 @@
         class="hidden-sm-and-up"
       >
         <h3 class="grey--text darken-2 text-center mt-2">Hippo Samp</h3>
-        <v-card class="blue pa-2 rounded-0" flat link to="hippo">
+        <v-card class="blue pa-1 rounded-0" flat link to="hippo">
           <v-img src="hippo-samp-combo.jpg" lazy-src="hippo-samp-combo.jpg" ></v-img>
         </v-card>
       </v-col>
