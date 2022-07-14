@@ -128,6 +128,32 @@
 
       </v-card>
     </v-col>
+
+    <v-col
+      cols="12"
+      sm="4"
+    >
+      <v-card
+        class="mx-auto"
+        max-width="300"
+        shaped
+      >
+        <v-img src="/team/Anita.jpg" height="350"></v-img>
+
+        <v-card-title>
+          Anita Grove
+        </v-card-title>
+
+        <v-card-subtitle>
+          Accountant
+        </v-card-subtitle>
+
+        <v-card-subtitle>
+          Contact: 056-515-3908 / <v-icon class="mb-1" small>mdi-phone</v-icon>
+        </v-card-subtitle>
+
+      </v-card>
+    </v-col>
   </v-row>
 </template>
 

@@ -1,6 +1,8 @@
 <template>
   <v-menu
     v-model="menuValue"
+    open-on-hover
+    close-delay="800"
     content-class="mt-2 elevation-3 rounded-xl"
     transition="fade-transition"
     offset-y
@@ -14,13 +16,16 @@
         v-bind="attrs"
         :class="{active: menuValue}"
         v-on="on"
-        to="/products/product-main"
       >
         Product Range
         <v-icon>mdi-arrow-up</v-icon>
       </v-btn>
     </template>
     <v-list color="darkgreen" dark>
+      <v-list-item nuxt to="/products/product-main">
+        <v-icon class="mr-2" color="light-green" small>mdi-triangle</v-icon>
+        <v-list-item-title class="font-weight-bold text-decoration-underline light-green--text">Full Product Range</v-list-item-title>
+      </v-list-item>
       <v-list-item nuxt to="/products/lucky">
         <v-icon class="mr-2" small>mdi-circle</v-icon>
         <v-list-item-title>Lucky Super Maize Meal</v-list-item-title>

@@ -1,4 +1,5 @@
 <template>
+
   <div>
     <!--  Navigation Drawer Start  -->
     <v-navigation-drawer
@@ -117,6 +118,11 @@ export default {
           icon     : 'mdi-shipping-pallet',
           text     : 'Products',
           subLinks : [
+            {
+              text : 'Product Range',
+              to    : '/products/product-main',
+              icon  : 'mdi-triangle'
+            },
             {
               text : 'Lucky Super Maize Meal',
               to    : '/products/lucky',

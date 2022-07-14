@@ -48,7 +48,7 @@
     </v-card>
     <v-toolbar color="#148a5c" flat></v-toolbar>
     <v-parallax
-      height="400"
+      height="300"
       src="/silos.jpg"
     >
       <v-container><h1 class="product-range text-center font-weight-bold">View our range of top quality products</h1>

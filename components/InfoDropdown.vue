@@ -5,10 +5,11 @@
     offset-y
     open-on-hover
     close-delay="800"
+    nudge-left="25"
   >
     <template v-slot:activator="{ on, attrs }">
       <v-btn
-        class="mr-1 hidden-sm-and-down font-weight-bold rounded-xl"
+        class="mr-2 hidden-sm-and-down font-weight-bold rounded-xl"
         color="#148a5c"
         v-bind="attrs"
         text

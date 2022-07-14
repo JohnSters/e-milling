@@ -8,10 +8,10 @@
       <v-col
         cols="12"
         sm="6"
-        class="hidden-md-and-down"
+        class="hidden-sm-and-down"
       >
         <h3 class="grey--text darken-2 text-center mb-2">Lucky Super Maize Meal</h3>
-        <v-card class="green pa-2 rounded-tl-circle rounded-tr-circle elevation-4" height="423" link to="lucky">
+        <v-card class="green pa-1 rounded-tl-circle rounded-tr-circle rounded-bl-0 rounded-br-0 elevation-1" height="423" link to="lucky">
           <v-img src="em-lucky-combo.jpg" lazy-src="em-lucky-combo.jpg" height="406"></v-img>
         </v-card>
       </v-col>
@@ -19,10 +19,10 @@
       <v-col
         cols="12"
         sm="6"
-        class="hidden-sm-and-up"
+        class="hidden-md-and-up"
       >
         <h3 class="grey--text darken-2 text-center mb-2">Lucky Super Maize Meal</h3>
-        <v-card class="green pa-2 elevation-4" link to="lucky">
+        <v-card class="green pa-1 elevation-1" link to="lucky">
           <v-img src="em-lucky-combo.jpg" lazy-src="em-lucky-combo.jpg"></v-img>
         </v-card>
       </v-col>
@@ -31,10 +31,10 @@
       <v-col
         cols="12"
         sm="6"
-        class="hidden-md-and-down"
+        class="hidden-sm-and-down"
       >
         <h3 class="grey--text darken-2 text-center mb-2">Super Life Maize Meal</h3>
-        <v-card class="red pa-2 rounded-tr-circle rounded-tl-circle elevation-4" height="423" link to="life">
+        <v-card class="red pa-1 rounded-tr-circle rounded-tl-circle rounded-bl-0 rounded-br-0 elevation-1" height="423" link to="life">
           <v-img src="life-maize-combo.jpg" lazy-src="life-maize-combo.jpg" height="406"></v-img>
         </v-card>
       </v-col>
@@ -43,10 +43,10 @@
       <v-col
         cols="12"
         sm="6"
-        class="hidden-sm-and-up"
+        class="hidden-md-and-up"
       >
-        <h3 class="grey--text darken-2 text-center mb-2">Super Life Maize Meal</h3>
-        <v-card class="red pa-2 elevation-4" link to="life">
+        <h3 class="grey--text darken-2 text-center mt-2">Super Life Maize Meal</h3>
+        <v-card class="red pa-1 rounded-0 elevation-1" link to="life">
           <v-img src="life-maize-combo.jpg" lazy-src="life-maize-combo.jpg"></v-img>
         </v-card>
       </v-col>
@@ -54,9 +54,9 @@
       <v-col
         cols="12"
         sm="6"
-        class="hidden-md-and-down"
+        class="hidden-sm-and-down"
       >
-        <v-card class="yellow pa-2 rounded-0" height="405" flat link to="keyona">
+        <v-card class="yellow pa-1 rounded-0 elevation-1" height="405" flat link to="keyona">
           <v-img src="keyona-maize-combo.jpg" lazy-src="keyona-maize-combo.jpg" height="388"></v-img>
         </v-card>
         <h3 class="grey--text darken-2 text-center mt-2">Keyona Superior Maize Meal</h3>
@@ -65,7 +65,7 @@
       <v-col
         cols="12"
         sm="6"
-        class="hidden-sm-and-up"
+        class="hidden-md-and-up"
       >
         <h3 class="grey--text darken-2 text-center mt-2">Keyona Superior Maize Meal</h3>
         <v-card class="yellow pa-2 rounded-0" flat link to="keyona">
@@ -77,9 +77,9 @@
       <v-col
         cols="12"
         sm="6"
-        class="hidden-md-and-down"
+        class="hidden-sm-and-down"
       >
-        <v-card class="blue pa-2 rounded-0" height="405" flat link to="hippo">
+        <v-card class="blue pa-2 rounded-0 elevation-1" height="405" flat link to="hippo">
           <v-img src="hippo-samp-combo.jpg" lazy-src="hippo-samp-combo.jpg" height="388" ></v-img>
         </v-card>
         <h3 class="grey--text darken-2 text-center mt-2">Hippo Samp</h3>
