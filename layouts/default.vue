@@ -45,7 +45,7 @@ export default {
           app: 'whatsapp',
           label: 'Marketing Manager',
           name: 'Kobie Burger',
-          number: '+27843109678',
+          number: '27843109678',
           avatar: {
             src: '/team/kobie.jpg',
             alt: 'Marketing Manager'
