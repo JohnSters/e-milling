@@ -13,10 +13,14 @@
           <br>
           We have doubled our capacity to 60 tons per hour.
         </h3>
-        <v-img src="/new-machines.jpeg" max-height="400" contain></v-img>
-        <hr class="ma-8 white">
-        <v-btn color="primary" @click="closeDialog">Close</v-btn>
-        <v-btn color="secondary" @click="closeDialog" to="/info/about-us">Find Out More</v-btn>
+        <v-card class="pa-3 ma-auto" width="600">
+          <v-img src="/new-machines.jpeg" max-height="400" contain></v-img>
+        </v-card>
+        <hr class="ma-4 transparent">
+        <div class="mb-5">
+          <v-btn color="primary" @click="closeDialog">Close</v-btn>
+          <v-btn color="secondary" @click="closeDialog" to="/info/about-us">Find Out More</v-btn>
+        </div>
       </v-card>
     </v-dialog>
 
