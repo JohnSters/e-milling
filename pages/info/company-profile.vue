@@ -13,9 +13,8 @@
           <p class="grey--text text--darken-2">In 2011, Eendag Meule Bothaville (Pty) Ltd constructed a second 6 ton/per hour mill, soon bordering on
             running at full capacity.</p>
           <p class="grey--text text--darken-2">We upgrade in 2015, again with a 15ton/hour mill, and capacity was increased up to 30 tons per hour.
-            Our latest upgrade in 2022 will double capacity to 60 tons per hour, upgrade the packaging lines to 4 fully
-            automatic lines screw fed bagging scales, a robotic palletizer and automatic pallet handling and wrapper
-            system.</p>
+            We also upgraded our packaging lines to <b>4 fully automatic lines screw fed bagging scales</b>, a robotic palletizer and automatic pallet handling and wrapping system.
+            With the latest upgrade completed our mill is running at a whopping 58 tons per hour, doubling our capacity!</p>
           <p class="grey--text text--darken-2">With unrivalled speed and reliability, Westweigh Systems provides a peace of mind packing solution to
             continuously pack our maize meal. At speeds of 20 bags/min for 10kg and 12.5kg, up to 18 bags/min for 25kg
             and 10 bags/min on 50kg, Eendag Meule Bothaville (Pty) Ltd strives to provide fast, quality service to our

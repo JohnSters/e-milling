@@ -18,8 +18,7 @@
               materials from within the Bothaville district. </p>
 
             <p class="grey--text text--darken-2">The company was established in <b>August 2006</b> and actively
-              commenced production in <b>May 2008</b>. We currently have a
-              capacity of more than <i>30 tons</i> per hour and our products include a variety of maize meals and stamp.
+              commenced production in <b>May 2008</b>. We recently upgraded our mill and increased our capacity to <b>60 tons per hour</b>.
               Eendag Meule
               Bothaville (Pty) Ltd is driven by customer satisfaction and we strive to keep customer relations strong by
               supplying the best range of quality products at competitive prices.</p>
@@ -45,6 +44,7 @@
               the
               ingredients to build a mill which will benefit not only to our community, but also to our great nation and
               surrounding countries.</p>
+            <v-img src="/new-machines.jpeg"></v-img>
           </v-container>
         </v-card>
     </v-container>

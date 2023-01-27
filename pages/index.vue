@@ -3,6 +3,23 @@
        This page is injected into the default page and displays where the <Nuxt /> tag is placed.
    -->
   <div>
+    <!-- Popup Dialogue Screen -->
+    <v-dialog v-model="showDialog" width="800" persistent>
+      <v-card class="pa-3 text-center blue-grey--text">
+        <h1>e-Milling News</h1>
+
+        <h3 class="mb-4">
+          We are proud to announce the completion of our mill upgrade!
+          <br>
+          We have doubled our capacity to 60 tons per hour.
+        </h3>
+        <v-img src="/new-machines.jpeg" max-height="400" contain></v-img>
+        <hr class="ma-8 white">
+        <v-btn color="primary" @click="closeDialog">Close</v-btn>
+        <v-btn color="secondary" @click="closeDialog" to="/info/about-us">Find Out More</v-btn>
+      </v-card>
+    </v-dialog>
+
     <v-toolbar class="hidden-sm-and-down" height="78" flat>
       <v-img src="/logo-black.jpg" class="hidden-sm-and-down" max-width="120" contain></v-img>
       <v-spacer class="mr-15"></v-spacer>
@@ -73,14 +90,16 @@
 </template>
 
 <script>
-
-
+window.onbeforeunload = () => {
+  localStorage.removeItem('showDialog')
+}
 export default {
   name: 'IndexPage',
 
   data: () => ({
     valid: true,
     name: '',
+    showDialog: true,
     items: [
       {
         src: '/office.jpg',
@@ -109,8 +128,17 @@ export default {
       v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
     ],
   }),
-
+  beforeMount() {
+    if (localStorage.getItem('showDialog') === 'true') {
+      this.showDialog = false
+      console.log('Dialogue has been opened')
+    }
+  },
   methods: {
+    closeDialog() {
+      this.showDialog = false
+      localStorage.setItem('showDialog', 'true')
+    },
     validate() {
       this.$refs.form.validate()
     },

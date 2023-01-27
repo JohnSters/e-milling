@@ -61,32 +61,6 @@
         max-width="300"
         shaped
       >
-        <v-img src="/team/andrew.jpeg" height="350"></v-img>
-
-        <v-card-title>
-          Andrew Strydom
-        </v-card-title>
-
-        <v-card-subtitle>
-          Agent – Limpopo
-        </v-card-subtitle>
-
-        <v-card-subtitle>
-          Contact: 083-706-3003 / <v-icon class="mb-1" small>mdi-cellphone</v-icon>
-        </v-card-subtitle>
-
-      </v-card>
-    </v-col>
-
-    <v-col
-      cols="12"
-      sm="4"
-    >
-      <v-card
-        class="mx-auto"
-        max-width="300"
-        shaped
-      >
         <v-img src="/team/jan-gerrit.jpeg" height="350"></v-img>
 
         <v-card-title>
@@ -99,32 +73,6 @@
 
         <v-card-subtitle>
           Contact: 083-409-0051 / <v-icon class="mb-1" small>mdi-cellphone</v-icon>
-        </v-card-subtitle>
-
-      </v-card>
-    </v-col>
-
-    <v-col
-      cols="12"
-      sm="4"
-    >
-      <v-card
-        class="mx-auto"
-        max-width="300"
-        shaped
-      >
-        <v-img src="/team/jacques.jpg" height="350"></v-img>
-
-        <v-card-title>
-          Jacques Langley
-        </v-card-title>
-
-        <v-card-subtitle>
-          Agent – Free State
-        </v-card-subtitle>
-
-        <v-card-subtitle>
-          Contact: 056-515-3908 / <v-icon class="mb-1" small>mdi-cellphone</v-icon>
         </v-card-subtitle>
 
       </v-card>
