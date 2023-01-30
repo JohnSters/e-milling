@@ -44,7 +44,9 @@
               the
               ingredients to build a mill which will benefit not only to our community, but also to our great nation and
               surrounding countries.</p>
-            <v-img src="/new-machines.jpeg"></v-img>
+            <v-card max-width="700" class="ma-auto pa-3">
+              <v-img src="/new-machines.jpg" max-height="500" contain></v-img>
+            </v-card>
           </v-container>
         </v-card>
     </v-container>
